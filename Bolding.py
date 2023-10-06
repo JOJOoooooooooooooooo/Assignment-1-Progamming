@@ -1,3 +1,5 @@
+#used for bolding text
+
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
