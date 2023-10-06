@@ -77,25 +77,25 @@ x = 0
 
 while x == 0 :
 
-    MyclassGhost = input("Select a class to play as by entering the number correspon ding with the class.\n(1) - Human\n(2) - Hobbit\n(3) - Dwarf\n(4) - Elf\n:")
+    MyclassShell = input("Select a class to play as by entering the number correspon ding with the class.\n(1) - Human\n(2) - Hobbit\n(3) - Dwarf\n(4) - Elf\n:")
 
-    if MyclassGhost == "1":
+    if MyclassShell == "1":
         x = x + 1
         input("JOJO: Splendid, just as I had hoped.")
         Myclass = adventureclass.Human()
 
 
-    elif MyclassGhost == "2":
+    elif MyclassShell == "2":
         x = x + 1
         input("JOJO: Splendid, just as I had hoped.")
         Myclass = adventureclass.Hobbit()
 
-    elif MyclassGhost == "3":
+    elif MyclassShell == "3":
         x = x + 1
         input("JOJO: Splendid, just as I had hoped.")
         Myclass = adventureclass.Dwarf()
     
-    elif MyclassGhost == "4":
+    elif MyclassShell == "4":
         x = x + 1
         input("JOJO: Splendid, just as I had hoped.")
         Myclass = adventureclass.Elf()
@@ -142,9 +142,9 @@ print("                                       /       '----'       \ ")
 print("")
 print("")
 
-print("God: You have now entered combat with a GOBLIN, depending on the class you have chosen, your attack, health and speed stats will differ. Since you have chosen " + color.BOLD + str(Myclass.name) + color.END + " your attack stat is, " + color.BOLD + str(Myclass.attack) + color.END)
-print("your health stat is, " + color.BOLD + str(Myclass.health) + color.END + " and your speed stat is, " + color.BOLD + str(Myclass.speed) + color.END)
-print("God: to engage in combat you must roll the dice, depending on your speed, you have a higher or lower chance of attacking first. Try it out!")
+input("God: You have now entered combat with a GOBLIN, depending on the class you have chosen, your attack, health and speed stats will differ. Since you have chosen " + color.BOLD + str(Myclass.name) + color.END + " your attack stat is, " + color.BOLD + str(Myclass.attack) + color.END)
+input("your health stat is, " + color.BOLD + str(Myclass.health) + color.END + " and your speed stat is, " + color.BOLD + str(Myclass.speed) + color.END)
+input("God: to engage in combat you must roll the dice, depending on your speed, you have a higher or lower chance of attacking first. Try it out!")
 
 Roll = random.randint(1,10)
 
