@@ -13,10 +13,4 @@ class color:
    END = '\033[0m'
 
 
-
-
-
-
-
-
 print(color.BOLD + str(Myclass.name) + color.END)
