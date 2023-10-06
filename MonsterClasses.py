@@ -1,29 +1,29 @@
-class golbin():
-    def __init__(Goblin):
-        Goblin.name = "Goblin"
-        Goblin.health = 7
-        Goblin.attack = 4
-        Goblin.speed = 5
+class Goblin():
+    def __init__(self):
+        self.name = "Goblin"
+        self.health = 7
+        self.attack = 4
+        self.speed = 5
 
-class orc():
-    def __init__(Orc):
-        Orc.name = "Orc"
-        Orc.health = 9
-        Orc. attack = 6
-        Orc.speed = 4
-
-
-class giant():
-    def __init__(Giant):
-        Giant.name = "Giant"
-        Giant.health = 15
-        Giant.attack = 10
-        Giant.speed = 1
+class Orc():
+    def __init__(self):
+        self.name = "Orc"
+        self.health = 9
+        self.attack = 6
+        self.speed = 4
 
 
-m1 = golbin()
+class Giant():
+    def __init__(self):
+        self.name = "Giant"
+        self.health = 15
+        self.attack = 10
+        self.speed = 1
 
-m2 = orc()
 
-m3 = giant()
+m1 = Goblin()
+
+m2 = Orc()
+
+m3 = Giant()
         

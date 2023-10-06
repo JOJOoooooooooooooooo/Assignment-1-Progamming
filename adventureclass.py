@@ -1,39 +1,44 @@
-class human():
-    def __init__(Human):
-        Human.name = "Human"
-        Human.health = 10
-        Human.attack = 6
-        Human.speed = 4
+#Max health stat = 15
+#Max Attack stat = 10
+#max speed stat = 10
 
-class hobbit():
-    def __init__(Hobbit):
-        Hobbit.name = "Hobbit"
-        Hobbit.health = 8
-        Hobbit.attack = 4
-        Hobbit.speed = 6
+
+class Human():
+    def __init__(self):
+        self.name = "Human"
+        self.health = 10
+        self.attack = 6
+        self.speed = 6
+
+class Hobbit():
+    def __init__(self):
+        self.name = "Hobbit"
+        self.health = 8
+        self.attack = 4
+        self.speed = 8
     
-class dwarf():
-    def __init__(Dwarf):
-        Dwarf.name = "Dwarf"
-        Dwarf.health = 12
-        Dwarf.attack = 9
-        Dwarf.speed = 3
+class Dwarf():
+    def __init__(self):
+        self.name = "Dwarf"
+        self.health = 12
+        self.attack = 9
+        self.speed = 4
 
-class elf():
-    def __init__(Elf):
-        Elf.name = "Elf"
-        Elf.heealth = 11
-        Elf.attack = 7
-        Elf.speed = 5
+class Elf():
+    def __init__(self):
+        self.name = "Elf"
+        self.health = 11
+        self.attack = 7
+        self.speed = 7
 
 
-c1 = human()
+c1 = Human()
 
-c2 = hobbit()
+c2 = Hobbit()
 
-c3 = dwarf()
+c3 = Dwarf()
 
-c4 = elf()
+c4 = Elf()
 
 
 
