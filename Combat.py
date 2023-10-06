@@ -29,8 +29,8 @@ def HobbitCombat():
     else:
         print(ch2.health - mc1.attack)
 
-if mc1.health <= 0:
-    break
+#if mc1.health <= 0:
+    #break                   for ending combat
 
 
 HobbitCombat()
