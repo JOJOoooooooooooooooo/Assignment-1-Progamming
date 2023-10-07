@@ -82,23 +82,23 @@ while x == 0 :
 
     if MyclassShell == "1":
         x = x + 1
-        input("JOJO: Splendid, just as I had hoped.")
+        input("JOJO: ahh yes... The will of humans are strong, just as I had hoped!")
         Myclass = adventureclass.Human()
 
 
     elif MyclassShell == "2":
         x = x + 1
-        input("JOJO: Splendid, just as I had hoped.")
+        input("JOJO: Splendid! the Hobbits unwavering spirit makes for the perfect companion, just as I had hoped!")
         Myclass = adventureclass.Hobbit()
 
     elif MyclassShell == "3":
         x = x + 1
-        input("JOJO: Splendid, just as I had hoped.")
+        input("JOJO: Splendid! The strength of dwarves are unrivaled, In that case im sure this journey will serve you well!")
         Myclass = adventureclass.Dwarf()
     
     elif MyclassShell == "4":
         x = x + 1
-        input("JOJO: Splendid, just as I had hoped.")
+        input("JOJO: The nobility and inteligence of the Elves are exactly what I'm looking for!")
         Myclass = adventureclass.Elf()
 
     else:
