@@ -21,9 +21,9 @@ class color:
 
 
 #Game title
-print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("><><><><><>><><><><><><><><><><><><| WELCOME TO THE HOPPIT |><><><><><><><><><><><><><><><><><><")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("><><><><><>><><><><><><><><><><><><<><><><| WELCOME TO THE HOPPIT |<><><><><><><><><><><><><><><><><><><><><\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
 print("                                            ,'\   |\\")
 print("                                           / /.:  ;;")
 print("                                          / :'|| //")
@@ -55,8 +55,8 @@ print("                                                  `'      ``-..___..-'")
 print("")
 print("")
 
-input("--------------------------------Press (enter) to enter the world--------------------------------\n\n\n")
-input("                            After a dailogue press enter to move on.\n\n\n")
+input("--------------------------------------Press (enter) to enter the world--------------------------------------\n\n\n")
+input("                                  After a dailogue press enter to move on.\n\n\n")
 
 #Asking user for player name
 input("Unknown Voice: Hey you down there, you alright?")
@@ -78,11 +78,11 @@ x = 0
 
 while x == 0 :
 
-    MyclassShell = input("Select a class to play as by entering the number correspon ding with the class.\n(1) - Human\n(2) - Hobbit\n(3) - Dwarf\n(4) - Elf\n:")
+    MyclassShell = input("Select a class to play as by entering the number corresponding with the class.\n(1) - Human\n(2) - Hobbit\n(3) - Dwarf\n(4) - Elf\n:")
 
     if MyclassShell == "1":
         x = x + 1
-        input("JOJO: ahh yes... The will of humans are strong, just as I had hoped!")
+        input("JOJO: Ahh yes... The will of humans are strong, just as I had hoped!")
         Myclass = adventureclass.Human()
 
 
@@ -106,31 +106,46 @@ while x == 0 :
         print("\n\nInvalid input, try again.\n\n")
 
 
-
-input(playername + ": I dont understand, what's going on?")
-input("JOJO: Dwarves from a long forgotten culture have come seeking my aid, and I have thought of no one better but you " + playername + " to join me on this quest!")
-input(playername + ": but why me? and what would I be helping with?")
-input("JOJO: Hahaha....All in due time my friend")
+#Dialogue: Introducing JOJO the Wizard
+input(playername + ": I dont understand, why are you looking for me?")
+input("JOJO: Well, dwarves from a long forgoten culture have come to me to seek help, and the task is to grave for me to do it alone.")
+input("JOJO: You see, I am in need of a companion, someone with a pure heart to help me on this quest. That is why I needed to find you!")
+input(playername + ": This is all so confusiong, how do you even know that I'm the one with the pure heart?")
+input(playername + ": And how did you know where to find me?")
+input("JOJO: Worry not my friend, it will all be clear in due time!")
+input("JOJO: Instead you should focus on getting home and getting well rested, you have a big day tomorrow. HAHAHAA!")
+input(playername + ": It is getting dark soon...wait a minute, what do you mean big day tomorrow?")
+input("JOJO: You see that hill in the south?")
+input(playername + ": Yeah...?")
+input("JOJO: Well, my humble abode resides at the summit, come meet me there at sunrise and our tale of great adventure shall begin!!!")
+input(playername + ": All the way there????")
 input(playername + ": ...")
-input("JOJO: Your mind should first be trying to piece together what you're doing in a cave on your lonesome")
-input(playername + ": *now that he meantions it... what am I doing here? all I remember is being called from my home then hitting my head...*")
-input("JOJO: Yooo-hooo, dont get too lost in thought. Take this and make your way back to your house, you will have some surprise visitors waiting to explain it all, I will meet you there")
-input("                 ><><><><><>><><><><><><><><><><><><| DAGGER AQUIRED |><><><><><><><><><><><><><><><><><><")
-input(playername + ": ...")
-print("")
-print("")
-print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print(" ><><><><><>><><><><><><><><><><><><| TWO HOURS LATER |><><><><><><><><><><><><><><><><><><            ")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
-input(playername + ": ...I wonder why JOJO handed me a dagger to get back home, its not like him to be overprotective in such a peaceful place...")
-input("Unkown Voice: Lost are you.... how about handing me all your shillings and maybe I can find a place for you to sleep here...")
-input(playername + ": A GOBLIN!. And this far from their home too!?")
+input(playername + ": ....")
+input(playername + ": .....")
+input(playername + ": Fine lets do it!")
+input("JOJO: HUZZAH!!, then its set!. I shall see you tomorrow bright and early!")
+input("JOJO: Oh! I had almost forgoten, here this is for you. Safe travels my friend.")
+input(playername + ": Huh? Whats this?")
+input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| DAGGER AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+input(playername + ": Ah I see, I dont see why I would need this but alright. Well I better get some rest for tomorrow.")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("                                            THE NEXT MORNING\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input(playername + ": * Yaaawnnn * Whew, I better start hedding out I dont wanna be late for my new friend.")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("- - - - - - - - - - - - - - - - - - - - PATH TO THE TOP OF THE HILL - - - - - - - - - - - - - - - - - -\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input(playername  + ": Just a little further and I should be able to start seeing some smoke from JOJO's chimney atleast.\n\n")
 
-print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("><><><><><>><><><><><><><><><><><><| GOBLIN ENCOUNTER!!!!!! |><><><><><><><><><><><><><><><><><><")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+#Goblin encounter
+print("_______________________________________________________________________________________________________\n")
+print("                               * The bushes infront of you seems suspisious *")
+print("_______________________________________________________________________________________________________\n")
+input(playername + ": Huh? Why is that bush moving like that, it's not even windy?")
+input("Unkown: Hehehehe, hey you there! Give me all your dabloons now Hehehehe!!!!")
+input(playername + ": AHHHH!!!\n\n\n")
 print("                                              ,      , ")
-print("                                             /(.-""-.)\ ")
+print("                                             / (.-""-.) \ ")
 print("                                         |\  \/      \/  /| ")
 print("                                         | \ / =.  .= \ / | ")
 print("                                         \( \   o\/o   / )/ ")
@@ -140,8 +155,9 @@ print("                                            \ \__/\__/ / ")
 print("                                          ___\ \|--|/ /___ ")
 print("                                        /`    \      /    `\ ")
 print("                                       /       '----'       \ ")
-print("")
-print("")
+print("\n\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+print("                                {-{-{-|    GOBLIN ENCOUNTER   |-}-}-}\n")
+print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
 
 Goblin = MonsterClasses.Goblin()
 
@@ -161,6 +177,7 @@ print("                              Speed:  "  + color.BOLD + str(Myclass.speed
 
 print("")
 
+# introduction to combat
 input("God: to engage in combat you must roll the dice, as you can see, since your speed is greater than the goblins that means you get to roll the dice first! If the dice rolls any number between 1 to your speed, you will then get to attack")
 input("The first combatant to reach health that is 0 or less will lose")
 input("God: Try it out!")
