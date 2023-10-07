@@ -20,6 +20,37 @@ ch4 = adventureclass.Elf()
 
 Roll = random.randint(1,10)
 
+#This is the Combat system we will be using
+
+while Myclass.health > 0 and Goblin.health > 0:   #or any monster
+    if Roll <= Myclass.speed:
+        damage = Myclass.attack
+        print(playername + " Attacks!")
+        Goblin.health -= damage
+        print("Goblin health:", Goblin.health)
+        if Goblin.health <= 0:
+            print("You have slain the enemy")
+        elif Goblin.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    else:
+        damage = Goblin.attack
+        print("The Goblin Attacks!")
+        Myclass.health -= damage
+        print(playername + " health:", Myclass.health)
+        if Myclass.health <= 0:
+            Myclass.health = 0
+            print("GAME OVER")
+        elif Myclass.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    
+
+
+
+
 print(Roll)
 
 def HobbitCombat():

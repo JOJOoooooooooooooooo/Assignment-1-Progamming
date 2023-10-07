@@ -147,7 +147,23 @@ Goblin = MonsterClasses.Goblin()
 
 input("God: You have now entered combat with a GOBLIN, depending on the class you have chosen, your attack, health and speed stats will differ. Since you have chosen " + color.BOLD + str(Myclass.name) + color.END + " your attack stat is, " + color.BOLD + str(Myclass.attack) + color.END)
 input("your health stat is, " + color.BOLD + str(Myclass.health) + color.END + " and your speed stat is, " + color.BOLD + str(Myclass.speed) + color.END)
-input("God: to engage in combat you must roll the dice, depending on your speed, you have a higher or lower chance of attacking first. Try it out!")
+
+print("")
+print("                                                  STATS                ")
+print("                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("                                     |      " + color.BOLD + str(playername) + color.END + " Versus " + color.BOLD + str(Goblin.name) + color.END + "      |")
+print("                                     ---------------|---------------")
+print("                              Health: " + color.BOLD + str(Myclass.health) + color.END +   "             |           " + color.BOLD + str(Goblin.health) + color.END)
+print("                                      --------------|--------------")
+print("                              Attack: " + color.BOLD + str(Myclass.attack) + color.END +  "             |           " + color.BOLD + str(Goblin.attack) + color.END)
+print("                                      --------------|------------ ")
+print("                              Speed:  "  + color.BOLD + str(Myclass.speed) + color.END +   "             |           " + color.BOLD + str(Goblin.speed) + color.END)
+
+print("")
+
+input("God: to engage in combat you must roll the dice, as you can see, since your speed is greater than the goblins that means you get to roll the dice first! If the dice rolls any number between 1 to your speed, you will then get to attack")
+input("The first combatant to reach health that is 0 or less will lose")
+input("God: Try it out!")
 
 Roll = random.randint(1,10)
 
@@ -155,17 +171,36 @@ input(" Press Enter to Roll Dice ")
 
 print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
 
-if Roll <= Myclass.speed:
-    print("Good job! in this case you would take the turn and attack")
-else:
-    print("uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
+while Myclass.health > 0 and Goblin.health > 0: 
+    if Roll <= Myclass.speed:
+        print("Good job! in this case you would take the turn and attack")
+        damage = Myclass.attack
+        print(playername + " Attacks!")
+        Goblin.health -= damage
+        print("Goblin health:", Goblin.health)
+        if Goblin.health <= 0:
+            print("You have slain the enemy")
+        elif Goblin.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    else:
+        print("uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
+        damage = Goblin.attack
+        print("The Goblin Attacks!")
+        Myclass.health -= damage
+        print(playername + " health:", Myclass.health)
+        if Myclass.health <= 0:
+            Myclass.health = 0
+            print("GAME OVER")
+        elif Myclass.health > 0:
+            print("God: Dont lose faith! continue the attack!")
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    
 
-input("                       " + color.BOLD + playername + Goblin.name + color.END +"                     "  )
-print("                                     -------------------------------")
-print("                                                    /               ")
-print("                                      --------------/--------------")
-print("                                                    /")
-print("                                                    /")
+
 
 
 
