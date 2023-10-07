@@ -179,7 +179,7 @@ while Myclass.health > 0 and Goblin.health > 0:
         Goblin.health -= damage
         print("Goblin health:", Goblin.health)
         if Goblin.health <= 0:
-            print("You have slain the enemy")
+            input("You have slain the enemy")
         elif Goblin.health > 0:
             Roll = random.randint(1,10)
             input(" Press Enter to Roll Dice ")
@@ -192,6 +192,7 @@ while Myclass.health > 0 and Goblin.health > 0:
         print(playername + " health:", Myclass.health)
         if Myclass.health <= 0:
             Myclass.health = 0
+            print("You have lost the fight")
             print("GAME OVER")
         elif Myclass.health > 0:
             print("God: Dont lose faith! continue the attack!")
@@ -200,7 +201,7 @@ while Myclass.health > 0 and Goblin.health > 0:
             input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     
 
-
+print("God: You now understand the rules of combat")
 
 
 
