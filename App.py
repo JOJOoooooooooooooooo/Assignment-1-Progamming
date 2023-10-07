@@ -143,6 +143,8 @@ print("                                       /       '----'       \ ")
 print("")
 print("")
 
+Goblin = MonsterClasses.Goblin()
+
 input("God: You have now entered combat with a GOBLIN, depending on the class you have chosen, your attack, health and speed stats will differ. Since you have chosen " + color.BOLD + str(Myclass.name) + color.END + " your attack stat is, " + color.BOLD + str(Myclass.attack) + color.END)
 input("your health stat is, " + color.BOLD + str(Myclass.health) + color.END + " and your speed stat is, " + color.BOLD + str(Myclass.speed) + color.END)
 input("God: to engage in combat you must roll the dice, depending on your speed, you have a higher or lower chance of attacking first. Try it out!")
@@ -158,6 +160,12 @@ if Roll <= Myclass.speed:
 else:
     print("uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
 
+input("                       " + color.BOLD + playername + Goblin.name + color.END +"                     "  )
+print("                                     -------------------------------")
+print("                                                    /               ")
+print("                                      --------------/--------------")
+print("                                                    /")
+print("                                                    /")
 
 
 

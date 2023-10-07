@@ -1,8 +1,8 @@
 class Goblin():
     def __init__(self):
         self.name = "Goblin"
-        self.health = 7
-        self.attack = 4
+        self.health = 5
+        self.attack = 3
         self.speed = 5
 
 class Orc():
