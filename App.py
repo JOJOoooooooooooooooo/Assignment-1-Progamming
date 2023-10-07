@@ -162,15 +162,13 @@ input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>
 Goblin = MonsterClasses.Goblin()
 # Introduction to combat
 print("_______________________________________________________________________________________________________\n")
-input("                               YOU HAVE ENTERED COMBAT WITH A GOBLIN:")
-print("                                  In this game combat is won by lowering the enemys health to 0.")
+input("                                  YOU HAVE ENTERED COMBAT WITH A GOBLIN:\n\n")
+print("                           In this game combat is won by lowering the enemys health to 0.")
 print("                                  You do so by rolling a dice with numbers 1-10,")
-print("                                  if the dice rolls a number that is less than or equal to your speed stat")
-input("                                  You Attack First. ")
-print("                                  However, if the dice roll is above your speed stat, the enemy will attack")
-print("                                  and if you're health goes to 0 you lose the game")
-print("                                  Depending on the class you chose,")
-print("                                  Your Attack, Health, and Speed stats will differ")
+print("                If the dice rolls a number that is less than or equal to your speed stat you attack first.\n")
+print("                           However, if the dice roll is above your speed stat, the enemy will attack.")
+print("                                  If you're health goes to 0 you lose the game")
+print("                    Depending on the class you chose, Your Attack, Health, and Speed stats will differ")
 input("_______________________________________________________________________________________________________\n")
 
 
@@ -188,8 +186,8 @@ print("                              Speed:  "  + color.BOLD + str(Myclass.speed
 print("")
 print("_______________________________________________________________________________________________________\n")
 input("                                      As you can see your speed is " + str(Myclass.speed))
-input("                                      Meaning that if its equal to or lower than " + str(Myclass.speed) + " You will attack first")
-print("                                      Try it out!")
+input("                           Meaning that if its equal to or lower than " + str(Myclass.speed) + " You will attack first")
+print("                                             Try it out!")
 input("_______________________________________________________________________________________________________\n")
 
 Roll = random.randint(1,10)
@@ -201,7 +199,7 @@ print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
 while Myclass.health > 0 and Goblin.health > 0: 
     if Roll <= Myclass.speed:
         print("_______________________________________________________________________________________________________\n")
-        print("                             Good job! in this case you would take the turn and attack")
+        print("                       Good job! in this case you would take the turn and attack")
         input("_______________________________________________________________________________________________________\n")
         damage = Myclass.attack
         print(playername + " Attacks!")
@@ -217,7 +215,7 @@ while Myclass.health > 0 and Goblin.health > 0:
             input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     else:
         print("_______________________________________________________________________________________________________\n")
-        print("           uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
+        print("           Uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
         input("_______________________________________________________________________________________________________\n")
         damage = Goblin.attack
         print("The Goblin Attacks!")
@@ -242,9 +240,9 @@ while Myclass.health > 0 and Goblin.health > 0:
 
 print("_______________________________________________________________________________________________________\n")
 input("                               You now understand the rules of combat")
-input("                               As the story progresses combat will evolve")
-input("                               And new challenges will apear.") 
-print("                               be ready to fight with both brawn and bains!")
+input("                             As the story progresses combat will evolve")
+input("                                   And new challenges will apear.") 
+print("                         Be prepared to fight with both your brawn and bains!")
 input("_______________________________________________________________________________________________________\n")
 
 #Getting to JOJO's house
@@ -271,3 +269,95 @@ input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| NECKLACE AQUIRED |-<>-<>-
 input(playername + ": Okay, I trust you, I'm gonna get some shut eye...")
 
 #Intorucing the dwarfs
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("                                            AFTER THE NAP\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input(playername + ": * What's all that noises, and who are all those voices?")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("- - - - - - - - - - - - - - - - - - - - YOU GO CLOSER TO THE SOUNDS - - - - - - - - - - - - - - - - - -\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input("Unkown: HAHAHAHAH-OH! IS THIS HIM?")
+input("JOJO: Alas, " + playername + ". You are finally awake, I want you to meet the people I mentioned.")
+input("Unkown: GREETINGS FELLOW BRAVEHEART! HOPE YER FEELIN BETTER, HAPPY TO MAKE YOUR AQUAINTANCE!")
+input(playername + ": Hello everyone! I am " + playername +".")
+input("UNO: PLESURE TO MEET'CHA, THE NAMES UNO.")
+input("DOS: THE'NAMES DOS HOWDY!")
+input("TRES: ......")
+input("JOJO: Aaaaand that's Tres, dont worry he's not a talker. But these are the 'Lost Dwarves', you remeber them?")
+input(playername + ": Ahhhhh, It's you guys! Hi everyone.")
+input("UNO: " + playername + " , SO JOJO MUST'VE GAVE'YA THE RUN DOWN EH?")
+input(playername + ": Heh!? Sort of?")
+input(playername + ": I'm supposed to...help you guys find a lost key to your house?")
+input("DOS: AAAAGHAHAHGHA, YOU'RA FUNNY ONE LADDY!")
+input("JOJO: Almost there, but not quite.")
+input(playername + ": Huh...?")
+input("JOJO: " + playername + ", using your own analogy. YOU are the key we need.")
+input(playername + ": And how am I supposed to open a door...?")
+input("UNO: WELL YA SEE BOY, THE DOOR IS A LITTLE DIFFRENT THAN WHATS IN YER HEAD.")
+input("JOJO: Jokes aside.....you and I are here to help them overthrow a feirce monster to set their home free...")
+input("JOJO: I'm sorry I didn't fully explain before and I understand if you want to turn back and-")
+input(playername + ": I'm in.")
+input("JOJO: ?")
+input(playername + ": This has always been my dream growing up, and after fighting the goblin I feel like I'm meant for this!")
+input("EVERYONE: HUZZAAHHHHH!!!!")
+input("DOS: ALRIGHTY THEN, WE SET OFF AT NOON! PREPARE YOURSELF BEAST WE ARE COMING FOR YE!!")
+
+#GOING TO THE DWARVES
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("                                                AT NOON\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input(playername + ": Which direction are we headed by the way?")
+input("JOJO: We're headed directly west, my only concern is that the fastest route involves going through the...")
+input("JOJO: * Whispers * the elf kingdom, alos you should probably not mention to the dwarfs")
+input(playername + ": Hmmm I think I understand what's going on, It's a SURPRIZE PARTY!!")
+input("JOJO: SHHHHH, HEY! Don't be so loud. We have to keep our path a secret because of the long and hard conflicts the Elfs have with the Dwarfs.")
+input(playername + ": OH! Hahaha, sorry Jojo. I didn't know.")
+input("JOJO: Worry not my friend, luckily Uno, Dos, and Tres are waliking ahead of us. This gives us time to catch up.")
+input("JOJO: If you want to ask me a question nows the time my friend.")
+
+#Questions from user
+print("_______________________________________________________________________________________________________\n")
+print("                            (1) - Ask about JOJO.")
+print("                            (2) - Ask about the monster.")
+print("_______________________________________________________________________________________________________\n")
+
+a = 0
+
+while a == 0:
+    userchoice1 = input("Enter a number for the corresponding options: ")
+
+    if userchoice1 == "1":
+        a = a + 1
+        input("\n\n" + playername + ": Alright then, tell me about yourself, who really are you and what do you do?")
+        input("JOJO: Hahaha, well I knew this would happen sooner or later, no point in fighting it hahahah!")
+        input(playername + ": ...")
+        input("JOJO: You know me as Jojo...BUT my proper name, bestowed onto me by the S.W.M.G! is Jonathan the All Knower!!!")
+        input(playername + ": * speachless* ")
+        input("JOJO: Hahaha, what a mouthfull am I right.")
+        input(playername + ": IT ALL MAKES SENSE NOW! I UNDERSTAND FINALLY!")
+        input(playername + ": So that's how you knew where to find me, and that's why u gave me the dagger, AND ALSO THAT'S HOW YOU HEALED ME, AND ALSO-")
+        input("JOJO: Whoahhh, slow down there my friend. Hahah you're making me blush.")
+        input(playername + ": So you really are something huh? Hahaha.")
+        input("JOJO: Hey what's that supposed to mean, Hahaha.")
+        input(playername + ": By the way what and who is the S.W.M.G?")
+        input("JOJO: Ah you see, the S.W.M.G stands for-")
+        input("DOS: HEY YOU LAZYBONES ALMOST DONE BACK THERE! WE CAN ALMOST SEE THE BRIDGE, CMON HURRY UP! HAHAHAHA!")
+    
+    elif userchoice1 == "2":
+        a = a + 1
+        input("\n\n" + playername +": Alright then, tell me about this monster we're going to face off.")
+        input("JOJO: Making good use of you time I see, Hahaha.")
+        input("JOJO: Well this monster is more than JUST a monster, it is feirce unlike any other, it is mightier than all, and it is the most beautiful creature in all the lands.")
+        input("JOJO: The sheer size of it is enough to scar all men who aproach it to soil their garments Hahaha.")
+        input(playername + ": Well what kind of monster is it then, more specifically this time?")
+        input("JOJO: Fair enough, the monster is a Dragon!")
+        input(playername + ": IT'S A-A-A D-D-DRAGO-")
+        input("DOS: HEY YOU LAZYBONES ALMOST DONE BACK THERE! WE CAN ALMOST SEE THE BRIDGE, CMON HURRY UP! HAHAHAHA!")
+
+    else:
+        print("Invalid input, try again.\n")
+
+input("JOJO: Oh well, there goes our time limit for that!")
+input("UNO: CMON YA HEAFTY LADS, LETS GET A MOVE ON.")
+input(playername + ": COMINGGG!")
+input("JOJO: Our next stop should be right over this bridge, ONWARDS!")
