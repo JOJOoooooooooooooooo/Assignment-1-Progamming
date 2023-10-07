@@ -247,11 +247,27 @@ input("                               And new challenges will apear.")
 print("                               be ready to fight with both brawn and bains!")
 input("_______________________________________________________________________________________________________\n")
 
+#Getting to JOJO's house
+input(playername +": Oh wow, that went a lot better than I hoped.")
+input("JOJO: Yoooo Hooooo, Good morning " + playername + "! I was wondering how much longer you were gonna take, Hahahaha.")
+input(playername + ": By the heavens, JOJO!")
+input("JOJO: Oh my! Are we that excited to see me again?")
+input("JOJO: Is everything alright by the way? I heard a bunch or ruckus in this area.")
+input(playername + ": Im okay now that you're here, and about that ruckus you heard!")
+input(playername + ": I defeated a goblin! He went after me as I was coming closer to your home.")
+input("JOJO: Oh my, we have a warrior at our hands! Amazing work " + playername + ".")
+input("JOJO: Follow me we're almost there, we can patch you up in my medicine bay")
 
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("- - - - - - - - - - - - - - - - - - - - - - - - AT JOJO'S HUT - - - - - - - - - - - - - - - - - - - - -\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
 
+input("JOJO: Well you're all set from here, good as new.")
+input(playername + ": Thanks, JOJO. By the way how do you now all the things you do.")
+input(playername + ": Like how did you know I was meant to acompny you, or how to heal me like that, or-or-o-")
+input("JOJO: My friend, you must rest. You are fresh from battle. Be at ease, as I promised it will all make sense.")
+input("JOJO: You just rest in bed for a little longer, and here take this. It should prove to be usefull in the future.")
+input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| NECKLACE AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+input(playername + ": Okay, I trust you, I'm gonna get some shut eye...")
 
-
-
-
-
-
+#Intorucing the dwarfs
