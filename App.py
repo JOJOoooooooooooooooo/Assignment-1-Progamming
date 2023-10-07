@@ -157,30 +157,40 @@ print("                                        /`    \      /    `\ ")
 print("                                       /       '----'       \ ")
 print("\n\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
 print("                                {-{-{-|    GOBLIN ENCOUNTER   |-}-}-}\n")
-print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
+input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
 
 Goblin = MonsterClasses.Goblin()
+# Introduction to combat
+print("_______________________________________________________________________________________________________\n")
+input("                               YOU HAVE ENTERED COMBAT WITH A GOBLIN:")
+print("                                  In this game combat is won by lowering the enemys health to 0.")
+print("                                  You do so by rolling a dice with numbers 1-10,")
+print("                                  if the dice rolls a number that is less than or equal to your speed stat")
+input("                                  You Attack First. ")
+print("                                  However, if the dice roll is above your speed stat, the enemy will attack")
+print("                                  and if you're health goes to 0 you lose the game")
+print("                                  Depending on the class you chose,")
+print("                                  Your Attack, Health, and Speed stats will differ")
+input("_______________________________________________________________________________________________________\n")
 
-input("God: You have now entered combat with a GOBLIN, depending on the class you have chosen, your attack, health and speed stats will differ. Since you have chosen " + color.BOLD + str(Myclass.name) + color.END + " your attack stat is, " + color.BOLD + str(Myclass.attack) + color.END)
-input("your health stat is, " + color.BOLD + str(Myclass.health) + color.END + " and your speed stat is, " + color.BOLD + str(Myclass.speed) + color.END)
 
 print("")
 print("                                                  STATS                ")
 print("                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("                                     |      " + color.BOLD + str(playername) + color.END + " Versus " + color.BOLD + str(Goblin.name) + color.END + "      |")
-print("                                     ---------------|---------------")
-print("                              Health: " + color.BOLD + str(Myclass.health) + color.END +   "             |           " + color.BOLD + str(Goblin.health) + color.END)
-print("                                      --------------|--------------")
-print("                              Attack: " + color.BOLD + str(Myclass.attack) + color.END +  "             |           " + color.BOLD + str(Goblin.attack) + color.END)
-print("                                      --------------|------------ ")
-print("                              Speed:  "  + color.BOLD + str(Myclass.speed) + color.END +   "             |           " + color.BOLD + str(Goblin.speed) + color.END)
+print("                                     -------------------------------")
+print("                              Health: " + color.BOLD + str(Myclass.health) + color.END +   "                         " + color.BOLD + str(Goblin.health) + color.END)
+print("                                      ------------------------------")
+print("                              Attack: " + color.BOLD + str(Myclass.attack) + color.END +  "                         " + color.BOLD + str(Goblin.attack) + color.END)
+print("                                      ------------------------------ ")
+print("                              Speed:  "  + color.BOLD + str(Myclass.speed) + color.END +   "                         " + color.BOLD + str(Goblin.speed) + color.END)
 
 print("")
-
-# introduction to combat
-input("God: to engage in combat you must roll the dice, as you can see, since your speed is greater than the goblins that means you get to roll the dice first! If the dice rolls any number between 1 to your speed, you will then get to attack")
-input("The first combatant to reach health that is 0 or less will lose")
-input("God: Try it out!")
+print("_______________________________________________________________________________________________________\n")
+input("                                      As you can see your speed is " + str(Myclass.speed))
+input("                                      Meaning that if its equal to or lower than " + str(Myclass.speed) + " You will attack first")
+print("                                      Try it out!")
+input("_______________________________________________________________________________________________________\n")
 
 Roll = random.randint(1,10)
 
@@ -190,36 +200,52 @@ print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
 
 while Myclass.health > 0 and Goblin.health > 0: 
     if Roll <= Myclass.speed:
-        print("Good job! in this case you would take the turn and attack")
+        print("_______________________________________________________________________________________________________\n")
+        print("                             Good job! in this case you would take the turn and attack")
+        input("_______________________________________________________________________________________________________\n")
         damage = Myclass.attack
         print(playername + " Attacks!")
         Goblin.health -= damage
-        print("Goblin health:", Goblin.health)
+        input("Goblin health:"+ str(Goblin.health))
         if Goblin.health <= 0:
-            input("You have slain the enemy")
+            print("_______________________________________________________________________________________________________\n")
+            print("                                 You have slain the enemy")
+            input("_______________________________________________________________________________________________________\n")
         elif Goblin.health > 0:
             Roll = random.randint(1,10)
             input(" Press Enter to Roll Dice ")
             input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     else:
-        print("uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
+        print("_______________________________________________________________________________________________________\n")
+        print("           uh oh it seems the odds where not in your favor, in this case the enemy would attack you")
+        input("_______________________________________________________________________________________________________\n")
         damage = Goblin.attack
         print("The Goblin Attacks!")
         Myclass.health -= damage
-        print(playername + " health:", Myclass.health)
+        input(playername + " health:" + str(Myclass.health))
         if Myclass.health <= 0:
             Myclass.health = 0
-            print("You have lost the fight")
-            print("GAME OVER")
+            print("_______________________________________________________________________________________________________\n")
+            print("                            You have lost the fight")
+            input("_______________________________________________________________________________________________________\n")
+            print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+            print("                                            GAME OVER\n")
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
         elif Myclass.health > 0:
-            print("God: Dont lose faith! continue the attack!")
+            print("_______________________________________________________________________________________________________\n")
+            print("                            Dont lose faith! continue the attack!")
+            input("_______________________________________________________________________________________________________\n")
             Roll = random.randint(1,10)
             input(" Press Enter to Roll Dice ")
             input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     
 
-print("God: You now understand the rules of combat")
-
+print("_______________________________________________________________________________________________________\n")
+input("                               You now understand the rules of combat")
+input("                               As the story progresses combat will evolve")
+input("                               And new challenges will apear.") 
+print("                               be ready to fight with both brawn and bains!")
+input("_______________________________________________________________________________________________________\n")
 
 
 
