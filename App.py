@@ -413,7 +413,7 @@ input("        You also now have a SUPER POWER; if your dice lands on the number
 print("                            use your powerful new allies to deal with these Bridge Trolls!")
 input("_______________________________________________________________________________________________________\n")
 input("JOJO: If we do plan on fighting I will not be able to join...as of now my magic is to weak to help...")
-input("JOJO: What say you " + playername + "do you wish to fight these Trolls or hear their challenges, the choice is yours my friend")
+input("JOJO: What say you " + playername + " do you wish to fight these Trolls or hear their challenges, the choice is yours my friend")
 print("_______________________________________________________________________________________________________\n")
 print("                            (1) - Fight The Trolls!")
 print("                            (2) - Attempt their Challenges.")
@@ -430,7 +430,7 @@ while Choice2 == 0:
     if userchoice2 == "1":
         Choice2 = Choice2 + 1
         print("I Chose to FIGHT!")
-        input("UNO: THAT'S WHAT IM TALKING ABOUT, NO WAY WE'RE LETTING THESE MONSTERS STOP US, DOS! TRES! LETS HELP " + playername +"FIGHT THESE BASTARDS")
+        input("UNO: THAT'S WHAT IM TALKING ABOUT, NO WAY WE'RE LETTING THESE MONSTERS STOP US, DOS! TRES! LETS HELP " + playername +" FIGHT THESE BASTARDS")
         Roll = random.randint(1,10)
         input(" Press Enter to Roll Dice ")
         print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
@@ -475,8 +475,102 @@ while Choice2 == 0:
                     input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     elif userchoice2 == "2":
         Choice2 = Choice2 + 1
-        print("")
+        input(playername + ": I chose, GAME!")
+        input("TROLLS: MUHAHAHAHA, YOU CHOSE TO PLAYYY. PREPARE YOURSELF!")
+        input(playername + ": Guys be carefull it could be anything!")
+        input("TROLLS: THE GAME IS QUITE SIMPLEEEE.")
+        input("UNO: SPIT IT OUT ALREADY YA BIG GOOFS!")
+        input("TROLLS: THE GAME IS....")
+        input("TROLLS: ROOOCKKKK!.....PAAPPEERRRRR!.....SCISSORSSS!")
+        input("TROLLS: THERE WILL BE ONLY OONNEEEE ROUNDDD......")
+        input("TROLLS: YOUR ONLY OPTIONS ARE....WIN......OR DIE!!!!!!")
+        input("DOS: DARNN YOUU, I HATE COMPLICATED MATH OR SINCE OR WHATEVER THIS IS!! I CANT DO IT!")
+        input(playername + ": I can do this!")
+        input("JOJO: We belive in you " + playername + ", remember you are stronger than you think.")
+        input("TROLLS: NOW LET THE GAME BEGINNNN!!!")
+        input("TROLLS: YELL YOUR ANSWER ON SHOOT! UNDERSTAND!!")
+        input(playername + ": Understood!\n")
+        input("TROLLS: ROCK!!!\n")
+        input("TROLLS: PAPER!!!\n")
+        input("TROLLS: SICSSORS!!!\n")
+        input("TROLLS: AND SHOOT!!!\n")
 
+#Rock paper scissor
+        s = 0
+
+        while s == 0:
+
+            game1 = ["Rock", "Paper", "Scissors"]
+            choice3 = input("Enter either 'Rock' , 'Paper' or 'Scissors': ")
+            trollschoice = random.choice(game1)
+
+            if choice3 == "Rock" and trollschoice == "Scissors":
+                s = s + 1
+                print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+
+            elif choice3 =="Rock" and trollschoice == "Paper":
+                    print("GAME OVER")
+                
+            elif choice3 == "Paper" and trollschoice == "Rock":
+                s = s + 1
+                print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+
+            elif choice3 == "Paper" and trollschoice == "Scissors":
+                    print("GAME OVER")
+
+            elif choice3 == "Scissors" and trollschoice == "Paper":
+                s = s + 1
+                print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+
+            elif choice3 == "Scissors" and trollschoice == "Rock":
+                    print("GAME OVER")
+                    quit()
+
+            elif choice3 == trollschoice:
+                input("TROLLS: A TIEEE!!!")
+                input("AGAINNNN!!!!!!!")
+
+            else:
+                print("Invalid input, try again.")
+
+#Going to the elfs
+input("EVERYONE: HIP HIP HURRAYYYY!!!!!!")
+input(playername + ": I was on edge for that, WHEWW!")
+input("JOJO: Glad tha's over Huzzahhahaha!")
+input("DOS: HAHAHA WELL JOJO, WHERE WE HEADED NOW?")
+input("JOJO: HAHA...Haahaha....about that...")
+input("JOJO: Our path leads to...The Elfs Kingdom.")
+input("ALL THE DWARFS: WHHHAAAATTTTTT!!!!!")
+input("TRES: I KNEW IT YOU SCHEMING SCUM!! YOU'RE WORKING WITH THEM FORSAKEN ELFS!!")
+input("UNO: WIZZARD YOU BETTER EXPLAIN YOURSELF RIGHT NOW!!!\n")
+input(playername + ": HEY! EVERYONE BE QUIET!!!!\n")
+input(playername +": WHATS THE MATTER WITH ALL OF YOU!")
+input(playername + ": * Deep breath * Jojo has been with all of us from the start, he's the one that brought us all together.")
+input("DOS: THE BOYS RIGHT! I KNOW WHAT THIS MEANS FOR US, BUT WE'VE BEEN THROUGH SO MUCH!")
+input("UNO: YE LADS HAVE A POINT...BUT I DON'T KNOW IF I HAVE IT IN ME TO GO FORWARD IN THIS DIRECTION!")
+input("TRES: OI YE ARE NOT SERIOUS ARE YE!")
+input("JOJO: Tres, I must appologise, I understand you feel this way but I solemly swear. I would never betray my comrads!")
+input("UNO AND DOS: AYE! WELL SAID!")
+input("TRES: IF MY BROTHERS SAY SO...THEN I HAVE NO SAY IN THE MATTER...")
+input(playername + ": Don't worry guys, we have eachother no matter what. We can face it all!")
+input("UNO: ALRIGHT THEN! IF YOU ARE WITH ME THEN WE ARE UNSTOPPABLE!")
+input("EVERYONE: HUZZAAHH!!!")
+input("JOJO: Alright then, lets rest for the night a little further down the path. And we move a sunrise.")
+input("JOJO: * Whispers to " + playername + " * Hey thanks for helping me out back there. You're a natural leader too huh? Haha")
+input(playername + ": Oh that, dont mention it of course my friend!")
+input("JOJO: Also keep an eye out for Tres, I have a weird feeling about whats to come...")
+input(playername + ": I understand, I dont think it's anything but ill keep an eye out since you mentioned it.")
+input("EVERYONE: GOODNIGHT!")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("                                              THE NEXT MORNING\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input("JOJO: Lets go everyone, it should be just past those trees.")
+input(playername + ": OH! I can smell the food, and the music it's wonderfull!")
+input("UNO: DONT FALL FOR IT BOY HAHAH, THOSE ELFS ARE ONE OF THE MOST FEIRCE FORCES OF NATURE!")
+input("DOS: DONT SCARE THE BOY TOO MUCH AHAHAHAHAA!")
+input("TRES:...")
+input(playername + ": There's the gate lets gooo!")
+input("JOJO: " + playername +"! WAIT DONT GET TOO CLOS-")
 
 input("UNKOWN VOICE: HEY STOP RIGHT THERE!")
 input("UNKOWN VOICE: WHERE DO YOU THINK YOU'RE GOING")
@@ -506,9 +600,10 @@ input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>
 input("TRES: I KNEW THEY WOULDNT LET US IN WITHOUT A FIGHT")
 input("UNO: WAIT TRES LETS HEAR THEM OUT FIRST, THIS ISNT WISE")
 input("JOJO: Yes I agree with UNO, its not right to go into the Elven Kingdom waging conflict, we are here to seek the aid of the Elven King after all")
-input("Elf General Sven: I see, so you wish an audience with his lordship... His majesty will only meet with those of great strength, if you want to get him, you must go through me first, ELF GENERAL SVEN!")
+input("ELF GENERAL SVEN: I see, so you wish an audience with his lordship... His majesty will only meet with those of great strength, if you want to get him, you must go through me first, ELF GENERAL SVEN!")
 input("JOJO: This is absurd! we are not here to start conflict!")
-input("Elf General Sven: ENOUGH IDILING! COME... TEST YOUR MIGHT!")
+input("ELF GENERAL SVEN: ENOUGH IDILING! COME... TEST YOUR MIGHT!")
+input(playername + ": So be it.")
 print("_______________________________________________________________________________________________________\n")
 print("                            Deafeat General Sven to get an audience with the king")
 input("_______________________________________________________________________________________________________\n")
@@ -529,7 +624,7 @@ while Myclass.health > 0 and ElfGeneral.health > 0:
         ElfGeneral.health -= damage
         print("Elf General Sven health:", ElfGeneral.health)
         if ElfGeneral.health <= 0:
-            print("You have slain the enemy")
+            print("You have Defeated The Elf General!")
         elif ElfGeneral.health > 0:
             Roll = random.randint(1,10)
             input(" Press Enter to Roll Dice ")
@@ -547,7 +642,7 @@ while Myclass.health > 0 and ElfGeneral.health > 0:
             input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
      else:
         damage = ElfGeneral.attack
-        print("ELf General Sven Attacks!")
+        print("Elf General Sven Attacks!")
         Myclass.health -= damage
         print(playername + " health:", Myclass.health)
 
@@ -558,6 +653,84 @@ while Myclass.health > 0 and ElfGeneral.health > 0:
                 Roll = random.randint(1,10)
                 input(" Press Enter to Roll Dice ")
                 input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+print("ELF GENERAL SVEN: GAAAHH..... You.... you and your band a lot stronger than I had thought")
+input("UNO: DAMN STRAIGHT!")
+input("JOJO: *He sure is strong, he could be just what we need for us to reclaim the Dwaven Kingdom...*")
+input("ELF GENERAL SVEN: HOWEVER, I WILL NOT YEI-")
+input("UNKOWN VOICE: Enough of this Sven...")
+input("GENERAL SVEN: YOUR MAJESTY!")
+print(",                                      ,")
+print("|\                                      /|")
+print(",   \'._ ,                           ,  _.'/   ,")
+print("|\  {'. '-`\,      ,-._**_.-,      ,/`-' .'}  /|")
+print(" \`'-'-.  '.`\      \*____*/      /`.'  .-'-'`/")
+print(",'-'-._  '.  ) )    /`    `\     ( (  .'  _.-'-',")
+print("|\'- _ '.   , /    /  /""\  \     \ ,  .'  _ -'/|")
+print(" \'-.   .  ; (     \_|^  ^|_/      ) ;   .  .-'/")
+print("  `'--, . ;  {`-.     \__/      .-'}  ; . ,--'`")
+print("   '--`_. ;  { ^  \  _|  |_    /  ^ }  ; ._`--'")
+print(" `,_.--  ;  { ^  `-'`      `'-`  ^ }  ;  --._,`")
+print("   ,_.-    ; {^    /        \    ^} ;    -._, ")
+print("    ,_.-`), /\{^,/\\_'_/\_'_//\,^}/\ ,(`-._,")
+print("      _.'.-` /.'   \        /   `.\ `-.'._")
+print("     `  _.' `       \      /       ` '._   `")
+print("                   .-'.  .'-.")
+print("                 .'    `` ^  '.")
+print("                /  ^ ^   ^  ^  \ ")
+print("                | ^    ^   ^   |")
+print("               /^   ^/    \  ^  \ ")
+print("               \,_^_/    ^ \_,^./")
+print("                 /=/  \^   /  \=\  ")
+print("                /=/_   | ^|   _\=\ ")
+print("           <(=,'=(==,) |  | (,==)=',=)>")
+print("             /_/|_\    /  \    /_|\_\ ")
+print("             `V (=|  .'    '.  |=) V`")
+print("                 V  / _/  \_ \  V")
+print("                     ``\  / `    ")
+print("                        \(")
+print("\n\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+print("                                {-{-{-|     ELF KING ENCOUNTER   |-}-}-}\n")
+input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
+
+print("ELF KING: My name is Algiar, I am king of the elves. Join me in the Great Hall....")
+input("UNO: WELL HES A LIVELY ONE ISNT HE...")
+input("JOJO: Best smarten up quick dwarf, for he is our ticket to saving your kingdom")
+input("TRES:AH YES, THE ELVEN KING RESPONSIBLE FOR OUR DOWNFALL IS NOW THE ONLY ONE WHO CAN SAVE US WHAT A BUNCH OF SHITE")
+input("DOS: WHATS GOTTEN INTO YOU TRES? CALM YOURSELF")
+input(playername + ": Let's listen to JOJO for now, if you want your kingdom to be saved Tres, we must swallow this pill and have conversation with the king")
+input("ELF GENERAL SVEN: I will guide you to the Great Hall")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("- - - - - - - - - - - - - - - - - - - - - - - - THE GREAT HALL - - - - - - - - - - - - - - - - - - - - -\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input(playername + ": Woah, this place is beautiful!")
+input("UNO: I MUST SAY FOR ELVES... THIS IS EASY ON THE EYES")
+input("DOS: AGRRED! IT'S NICE TO SEE ELVEN ARCHITECTURE")
+input("TRES: ....")
+input("JOJO: YOUR MAJESTY, THANK YOU FOR WELCOMING US INTO YOUR HOME!")
+input("ELF KING ALGIAR: No need to thank me")
+input("ELF KING ALGIAR: I am very eager to hear what news would bring a " + Myclass.name + " A Wizard and most intriguing of all Dwarves to an Elvish Kingdom")
+input("UNO: AIGHT WELL YOU SEE ME LORD-")
+input("JOJO: best let me do the talking for now Uno, I promise you'll get your time later")
+input("TRES:......")
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("                                              2 HOURS LATER\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+
+input("ELF KING ALGIAR: I SEE! so you need the aid of the elves to take back your long forgotten home!")
+input("ELF KING ALGIAR: How Genuienly splendid")
+input("TRES: splendid?...SPLENDID?")
+print(playername + ": !!!")
+print("UNO: !!!")
+print("DOS: !!!")
+input("JOJO: TRES WAIT NOW IS NOT THE TIME!")
+input("TRES: SCREW THE TIME I NEVER KNEW HOW TO READ A CLOCK ANYWAY")
+input(playername + ": huh?")
+input("TRES: WHAT I DO KNOW, AND HAVE ALWAYS KNOWN SINCE I WAS A WEE LAD, IS THAT YOU ELVES ARE THE REASON WE LOST IT ALL, NOW LOOK AT YOU SITTING HIGH AND MIGHTY ON YOUR THRONE, WHILE WE THE... WE...")
+input("TRES: WE THE DWARVES! RUN FOR OUR HOME SEEKING THE AID OF THOSE NOT OF OUR BLOOD LIKE BEGGARS")
+input("ELF KING ALGIAR: Is that how you truly feel?")
+input("TRES: I'VE HAD ENOUGH OF THIS, I CANT STAND THESE ELVES")
+input("TRES: " + playername +)
 
 
 
