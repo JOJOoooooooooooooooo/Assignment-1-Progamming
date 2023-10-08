@@ -1,6 +1,8 @@
 import adventureclass
 import MonsterClasses
 import random
+import math
+import BossClasses
 
 
 
@@ -474,6 +476,92 @@ while Choice2 == 0:
     elif userchoice2 == "2":
         Choice2 = Choice2 + 1
         print("")
+
+
+input("UNKOWN VOICE: HEY STOP RIGHT THERE!")
+input("UNKOWN VOICE: WHERE DO YOU THINK YOU'RE GOING")
+print("                      _)\.-.")
+print("     .-.__,___,_.-=-. )\`  a`\_")
+print(" .-.__\__,__,__.-=-. `/  \     `\ ")
+print(" {~,-~-,-~.-~,-,;;;;\ |   '--;`)/") 
+print("  \-,~_-~_-,~-,(_(_(;\/   ,;/")   
+print(    ",-.~_,-~,-~,)_)_)'.  ;;( ")
+print("     `~-,_-~,-~(_(_(_(_\  `;\ ") 
+print("  ,        `'~~--,)_)_)_)\_   \ ")
+print("  |\              (_(_/_(_,   \  ;")
+print("  \ '-.       _.--'  /_/_/_)   | |")
+print("   '--.\    .'          /_/    | |")
+print("       ))  /       \      |   /.'")
+print("      //  /,        | __.'|  |")
+print("     //   ||        /`    (  ||")
+print("    ||    ||      .'       \ \\")
+print("    ||    ||    .'_         \ \\")
+print("     \\   //   / _ `\        \ \\_")
+print("      \'-'/(   _  `\,;        \ '--:,")
+print("        `'`  `'` `-,,;         `" ",,; ")
+print("\n\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+print("                                {-{-{-|     ELF GENERAL ENCOUNTER   |-}-}-}\n")
+input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
+
+input("TRES: I KNEW THEY WOULDNT LET US IN WITHOUT A FIGHT")
+input("UNO: WAIT TRES LETS HEAR THEM OUT FIRST, THIS ISNT WISE")
+input("JOJO: Yes I agree with UNO, its not right to go into the Elven Kingdom waging conflict, we are here to seek the aid of the Elven King after all")
+input("Elf General Sven: I see, so you wish an audience with his lordship... His majesty will only meet with those of great strength, if you want to get him, you must go through me first, ELF GENERAL SVEN!")
+input("JOJO: This is absurd! we are not here to start conflict!")
+input("Elf General Sven: ENOUGH IDILING! COME... TEST YOUR MIGHT!")
+print("_______________________________________________________________________________________________________\n")
+print("                            Deafeat General Sven to get an audience with the king")
+input("_______________________________________________________________________________________________________\n")
+
+ElfGeneral = BossClasses.ElfGeneral()
+
+Roll = random.randint(1,10)
+
+input(" Press Enter to Roll Dice ")
+
+print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+while Myclass.health > 0 and ElfGeneral.health > 0:
+     if Roll in [1,7]:
+        damage = 0.7 * ElfGeneral.health
+        formatted_damage = "{:.2f}".format(damage)
+        print(playername + " and party uses RADIANT SPARK")
+        ElfGeneral.health -= damage
+        print("Elf General Sven health:", ElfGeneral.health)
+        if ElfGeneral.health <= 0:
+            print("You have slain the enemy")
+        elif ElfGeneral.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+     elif Roll <= Myclass.speed:
+        damage = Myclass.attack + LostDwarves.attack
+        print(playername + " and party Attacks!")
+        ElfGeneral.health -= damage
+        print("Elf General Sven:", ElfGeneral.health)
+        if ElfGeneral.health <= 0:
+            print("You have slain the enemy")
+        elif ElfGeneral.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+     else:
+        damage = ElfGeneral.attack
+        print("ELf General Sven Attacks!")
+        Myclass.health -= damage
+        print(playername + " health:", Myclass.health)
+
+        if Myclass.health <= 0:
+            Myclass.health = 0
+            print("GAME OVER")
+        elif Myclass.health > 0:
+                Roll = random.randint(1,10)
+                input(" Press Enter to Roll Dice ")
+                input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+
+
+
 
 
  
