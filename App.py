@@ -271,11 +271,11 @@ print("_________________________________________________________________________
 input("                               You now understand the rules of combat")
 input("                             As the story progresses combat will evolve")
 input("                                   And new challenges will apear.") 
-print("                         Be prepared to fight with both your brawn and bains!")
+print("                         Be prepared to fight with both your brawn and brains!")
 input("_______________________________________________________________________________________________________\n")
 
 print("_______________________________________________________________________________________________________\n")
-input("                   Your party has gotten stroger, your health stat has increased by 3")
+input("                   Your party has gotten stronger, your health stat has increased by 3")
 input("_______________________________________________________________________________________________________\n")
 
 Myclass.health = Myclass.health +3
@@ -285,7 +285,7 @@ input(playername +": Oh wow, that went a lot better than I hoped.")
 input("JOJO: Yoooo Hooooo, Good morning " + playername + "! I was wondering how much longer you were gonna take, Hahahaha.")
 input(playername + ": By the heavens, JOJO!")
 input("JOJO: Oh my! Are we that excited to see me again?")
-input("JOJO: Is everything alright by the way? I heard a bunch or ruckus in this area.")
+input("JOJO: Is everything alright by the way? I heard a bunch of ruckus in this area.")
 input(playername + ": Im okay now that you're here, and about that ruckus you heard!")
 input(playername + ": I defeated a goblin! He went after me as I was coming closer to your home.")
 input("JOJO: Oh my, we have a warrior at our hands! Amazing work " + playername + ".")
@@ -296,8 +296,8 @@ print("- - - - - - - - - - - - - - - - - - - - - - - - AT JOJO'S HUT - - - - - -
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
 
 input("JOJO: Well you're all set from here, good as new.")
-input(playername + ": Thanks, JOJO. By the way how do you now all the things you do.")
-input(playername + ": Like how did you know I was meant to acompny you, or how to heal me like that, or-or-o-")
+input(playername + ": Thanks, JOJO. By the way how do you know all the things you do.")
+input(playername + ": Like how did you know I was meant to acompany you, or how to heal me like that, or-or-o-")
 input("JOJO: My friend, you must rest. You are fresh from battle. Be at ease, as I promised it will all make sense.")
 input("JOJO: You just rest in bed for a little longer, and here take this. It should prove to be usefull in the future.")
 input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| NECKLACE AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
@@ -351,7 +351,7 @@ input("JOJO: * Whispers * the elf kingdom, alos you should probably not mention 
 input(playername + ": Hmmm I think I understand what's going on, It's a SURPRIZE PARTY!!")
 input("JOJO: SHHHHH, HEY! Don't be so loud. We have to keep our path a secret because of the long and hard conflicts the Elfs have with the Dwarfs.")
 input(playername + ": OH! Hahaha, sorry Jojo. I didn't know.")
-input("JOJO: Worry not my friend, luckily Uno, Dos, and Tres are waliking ahead of us. This gives us time to catch up.")
+input("JOJO: Worry not my friend, luckily Uno, Dos, and Tres are walking ahead of us. This gives us time to catch up.")
 input("JOJO: If you want to ask me a question nows the time my friend.")
 
 #Questions from user
@@ -411,7 +411,7 @@ print("_________________________________________________________________________
 print("                                 You feel a tremble in the earth")
 print("_______________________________________________________________________________________________________\n")
 input("\nUNKOWN: FII FII FOO FUMMMM")
-input("UNO: OI WHATS GOIN ON HER")
+input("UNO: OI WHATS GOIN ON HERE")
 input("UNKOWN: WHOOOO DAAARES COMEE NEEEAARRR!!!")
 input("JOJO: Everyone be ready for anything!\n\n\n")
 
@@ -849,7 +849,7 @@ input("TRES: WHAT I DO KNOW, AND HAVE ALWAYS KNOWN SINCE I WAS A WEE LAD, IS THA
 input("TRES: WE THE DWARVES! RUN FOR OUR HOME SEEKING THE AID OF THOSE NOT OF OUR BLOOD LIKE BEGGARS AND NOW YOU TRY TO STEAL WHATS LEFT OF OUR WEALTH AS WELL!! HOW DARE YOU")
 input("ELF KING ALGIAR: Is that how you truly feel?")
 input("TRES: I'VE HAD ENOUGH OF THIS, I CANT STAND THESE ELVES")
-input("TRES: " + playername + "YOU SAID YOU UNDERSTOOD MY PAIN, IF YOU REALLY DO THEN YOU'LL HELP ME DETHRONE THIS FALSE KING AND TAKE THEIR WEAPONS FOR OUR OWN, WE CAN DO THIS WITHOUT THESE DAMN ELVES")
+input("TRES: " + playername + " YOU SAID YOU UNDERSTOOD MY PAIN, IF YOU REALLY DO THEN YOU'LL HELP ME DETHRONE THIS FALSE KING AND TAKE THEIR WEAPONS FOR OUR OWN, WE CAN DO THIS WITHOUT THESE DAMN ELVES")
 input(playername + ": Tres...")
 print("_______________________________________________________________________________________________________\n")
 print("                            (1) - Stop Tres")
