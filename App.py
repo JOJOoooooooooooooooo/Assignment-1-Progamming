@@ -1569,6 +1569,212 @@ while Choice3 == 0:
 
         elif isinstance(Myclass, adventureclass.Hobbit):
             print(playername + ": Ill try to snap him out of it, I know hell come back, Im a hobbit, Its my thing :D")
+            print("JOJO: We have no other choice, go for it " + playername)
+            print(playername + ": You have to snap out of it Tres!, You remember me, you know I feel your pain, dont do this to your brothers, they've fought so hard to Make it to this point with you")
+            Roll = random.randint(1,2)
+
+            input(" Press Enter to Roll Dice ")
+
+            print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+            z = 0
+            while z == 0:
+                if Roll == 1:
+                    z = z +1
+                    print("TRES: AGHH WHAT HAPPEND TO ME, WHY DO I FEEL LIKE SOMEONE ELSE WAS IN MY BODY.. IN MY SKIN")
+                else:
+                    print(playername + ": Its not working Try again")
+                    Roll = random.randint(1,2)
+                    input(" Press Enter to Roll Dice ")
+
+                    print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+            input(playername + "It's Okay Tres Im here for you")
+            input("JOJO: I cant believe it! I've never in all my years seen a hobbit cure the Devils Greed Sickness without magic, you truly are a special one " + playername + "Im glad I never doubted you for a second")
+            input(playername + ": Thank you JOJO")
+            input("UNO: TRES!")
+            input("DOS: BROTHER!!")
+            input("TRES: IM OKAY BROTHER'S I JUST NEED SOME REST... THANK YOU " + playername + "FOR STOPPING ME BEFORE SOMETHING BAD HAPPEND")
+            input(playername + ": Dont mention it Tres!")
+            input("JOJO: Okay brother's rest up, for now we must prepare to fight the Calamitous Stunna! and reclaim your home!")
+            input("EVERYONE: HUZAAAHHHHH!!! ")
+            print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+            print("                                              3 HOURS LATER\n")
+            input("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+            input("JOJO: It's time Brothers, grab your equipment and lets make our way to the treasurery!")
+            input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| DWARVEN ARMOUR AND WEAPONS AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+            print("_______________________________________________________________________________________________________\n")
+            print("                            party Health and Attack Stats Increased by 5 ")
+            input("_______________________________________________________________________________________________________\n")
+            Myclass.attack = Myclass.attack + 5
+            Myclass.health = Myclass.health + 5
+            print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+            print("- - - - - - - - - - - - - - - - - - - - - - - - THE TREASURE ROOM- - - - - - - - - - - - - - - - - - - - -\n")
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+            input("UNO: MONSTER! BEAST! UGLY CREATURE! YOU'VE SLEPT IN OUR HOME FOR FAR TOO LONG!")
+            input("DOS: YEAH ITS TIME FOR YOU TO LEAVE OUR KINGDOM")
+            input("TRES: WE WILL RECLAIM OUR FATHERS LAND")
+            input("STUNNA THE CALAMITOUS DRAGON: ssssssssss..... Ooooooh.... So it seems these pesky dwarves have come back for MY gold, ILL SHOW YOU THE MIGHT OF THE MOST FEARED DRAGON IN THIS REALM!")
+            print("                                             ,--,  ,.-.")
+            print("              ,                   \,       '-,-`,'-.' | .")
+            print("             /|           \    ,   |\         }  )/  / `-,',")
+            print("             [ ,          |\  /|   | |        /  \|  |/`  ,`")
+            print("             | |       ,.`  `,` `, | |  _,...(   (      .',")
+            print("             \  \  __ ,-` `  ,  , `/ |,'      Y     (   /_L\ ")
+            print("              \  \_\,``,   ` , ,  /  |         )         _,/")
+            print("               \  '  `  ,_ _`_,-,<._.<        /         /")
+            print("                ', `>.,`  `  `   ,., |_      |         /")
+            print("                  \/`  `,   `   ,`  | /__,.-`    _,   `\ ")
+            print("              -,-..\  _  \  `  /  ,  / `._) _,-\`       \ "  )
+            print("               \_,,.) /\    ` /  / ) (-,, ``    ,        |" )
+            print("              ,` )  | \_\       '-`  |  `(               \ ")
+            print("             /  /```(   , --, ,' \   |`<`    ,            |")
+            print("            /  /_,--`\   <\  V /> ,` )<_/)  | \      _____)")
+            print("      ,-, ,`   `   (_,\ \    |   /) / __/  /" )
+            print("     (-, \           ) \ ('_.-._)/ /,`    /")
+            print("     | /  `          `/ \\ V   V, /`     /" )
+            print("  ,--\(        ,     <_/`\\     ||      /")
+            print(" (   ,``-     \/|         \-A.A-`|     / ")
+            print(",>,_ )_,..(    )\          -,,_-`  _--`")
+            print(" (_ \|`   _,/_  /  \_            ,--`")
+            print(" \( `   <.,../`     `-.._   _,-`")
+
+            print("")
+            
+            input(playername + " : What a fearsome foe, I wont back down!")
+
+            DragonStunna = BossClasses.Dragon()
+
+            Roll = random.randint(1,10)
+
+            input(" Press Enter to Roll Dice ")
+
+            print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+            while Myclass.health > 0 and DragonStunna.health > 0:
+                if Roll in [1,7]:
+                    damage = 0.7 * DragonStunna.health
+                    formatted_damage = "{:.2f}".format(damage)
+                    print(playername + " and party uses RADIANT SPARK")
+                    DragonStunna.health -= damage
+                    print("DRAGON STUNNA'S health:", DragonStunna.health)
+
+                    if DragonStunna.health <= 0:
+                     print("You have Defeated The Calamitous DRAGON STUNNA!!!")
+                    elif DragonStunna.health > 0:
+                        Roll = random.randint(1,10)
+                        input(" Press Enter to Roll Dice ")
+                        input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+                elif Roll <= Myclass.speed:
+                    damage = Myclass.attack + LostDwarves.attack
+                    print(playername + " and party Attacks!")
+                    DragonStunna.health -= damage
+                    print("DRAGON STUNNA'S health:", DragonStunna.health)
+                    if DragonStunna.health <= 0:
+                        print("You have defeated The calamitous DRAGON STUNNA!!!")
+                    elif DragonStunna.health > 0:
+                        Roll = random.randint(1,10)
+                        input(" Press Enter to Roll Dice ")
+                        input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+                else:
+                    damage = DragonStunna.attack
+                    print("DRAGON STUNNA Attacks!")
+                    Myclass.health -= damage
+                    print(playername + " health:", Myclass.health)
+
+                    if Myclass.health <= 0:
+                        Myclass.health = 0
+                        print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+                        print("                                            GAME OVER\n")
+                        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+                        print("                                              ,--.")
+                        print("                                             {    }")
+                        print("                                             K,   }")
+                        print("                                            /  `Y`")
+                        print("                                       _   /   / ")
+                        print("                                      {_'-K.__/")
+                        print("                                        `/-.__L._")
+                        print("                                        /  ' /`\_}")
+                        print("                                       /  ' /  ")
+                        print("                               ____   /  ' / ")
+                        print("                        ,-'~~~~    ~~/  ' /_")
+                        print("                      ,'             ``~~~  ',")
+                        print("                     (                     %  Y")
+                        print("                    {                       % I")
+                        print("                   {      -                 %  `.")
+                        print("                   |       ',                %  )")  
+                        print("                   |        |   ,..__      __. Y")
+                        print("                   |    .,_./  Y ' / ^Y   J   )|")
+                        print("                   \           |' /   |   |   ||")
+                        print("                    \          L_/    . _ (_,.'(")
+                        print("                     \,   ,      ^^""' / |      )")
+                        print("                       \_  \          /,L]     /")
+                        print("                         '-_`-,       ` `   ./`")
+                        print("                            `-(_            )")
+                        print("                                ^^\..___,.--`")
+                        sys.exit()
+
+                    elif Myclass.health > 0:
+                        Roll = random.randint(1,10)
+                        input(" Press Enter to Roll Dice ")
+                        input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+            print ("STUNNA THE CALAMITOUS DRAGON: NOOOOOO, THIS CANT BE.....I....Wont...Give up my gold......")
+            input("EVERYONE: WE DID ITTTTTT!!!!!")
+            input("UNO: I CANT BELIEVE IT, WE'VE ACTUALLY DONE IT")
+            input("DOS: IM TEARING UP")
+            input("TRES: IT'S FINALLY DONE, THANK YOU JOJO AND " + playername + " WE COULDNT HAVE GOTTEN THIS FAR WITHOUT YOU ALL ")
+            input("JOJO: You asked for my help and with the companionship of " + playername + "we have reclaimed your home")
+            input(playername + "I am so grateful to have gone on this adventure with you all, im so happy we did it!")
+            input("TRES: ANYTHING IN THIS KINGDOM IS YOURS JOJO AND " + playername + "FEEL FREE TO STAY AS LONG AS YOU LIKE")
+            input("JOJO: yes " + playername + " I will aid you back to your home once we have finished our clebration so for now enjoy yourself, for without you we couldnt have done it")
+            print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+            print("><><><><><>><><><><><><><><><><><><<><><><| END OF THE HOPPIT |<><><><><><><><><><><><><><><><><><><><><\n")
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| --------------------- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+            print("                           /\ ")
+            print("                           ||")
+            print("                           ||")
+            print("                           ||                                               ~-----~")
+            print("                           ||                                            /===--  ---~~~")
+            print("                           ||                   ;'                 /==~- --   -    ---~~~ ")
+            print("                           ||                (/ ('              /=----         ~~_  --(  ' ")
+            print("                           ||             ' / ;'             /=----               \__~")
+            print("        '                ~==_=~          '('             ~-~~      ~~~~        ~~~--\~'")
+            print("        \\                (c_\_        .i.             /~--    ~~~--   -~     (     '")
+            print("         `\               (}| /       / : \           / ~~------~     ~~\   (")
+            print("         \ '               ||/ \      |===|          /~/             ~~~ \ \(")
+            print("         ``~\              ~~\  )~.~_ >._.< _~-~     |`_          ~~-~     )\ ")
+            print("          '-~                 {  /  ) \___/ (   \   |` ` _       ~~         '")
+            print("          \ -~\                -<__/  -   -  L~ -;   \\    \ _ _/")
+            print("          `` ~~=\                  {    :    }\ ,\    ||   _ :(")
+            print("           \  ~~=\__                \ _/ \_ /  )  } _//   ( `|'")
+            print("           ``    , ~\--~=\           \     /  / _/ / '    (   '")
+            print("            \`    } ~ ~~ -~=\   _~_  / \ / \ )^ ( // :_  / '")
+            print("            |    ,          _~-'   '~~__-_  / - |/     \ (")
+            print("             \  ,_--_     _/              \_'---', -~ .   \ ")
+            print("              )/      /\ / /\   ,~,         \__ _}     \_   ")
+            print("              ,      { ( _ )'} ~ - \_    ~\  (-:-)          ")
+            print("                     /'' ''  )~ \~_ ~\   )->  \ :|    _,        ")
+            print("                    (\  _/)''} | \~_ ~  /~(   | :)   /          }")
+            print("                   <``  >;,,/  )= \~__   { '  \ =(  ,   ,       ;")
+            print("                  {o_o }_/     |v  '~__  _    )-v|  "           "")
+            print('                  {/"\_)       {_/  \~__  \_ \\_}    {        / \ ')
+            print("                 ,/!          '    '~__ _-~ \_' :        ,   ~ ")
+            print("                (''`                  /,'~___~    | /     ,     ")
+            print("                 '/, )                 (-)  '~____~"       "     , }")
+            print("               /,')                    / \         /  ,~-        '~'")
+            print("          (  ''/                     / ( '       /  /          '~'")
+            print("       ~ ~  ,, /) ,                 (/( \)      ( -)          /~'")
+            print("     (  ~~ )`  ~}                   '  \)'     _/ /           ~'")
+            print("    { |) /`,--.(  }'                    '     (  /          /~'")
+            print("   (` ~ ( c|~~| `}   )                        '/:\         ,'")
+            print("    ~ )/``) )) '|),                          (/ | \)              ")
+            print("     (` (-~(( `~`'  )                        ' (/ ' ")
+            print("      `~'    )'`')                              '")
+            print("        ` ``")
+            sys.exit()
+
+
+   
         elif isinstance(Myclass, adventureclass.Dwarf):
             print(playername + ": Although I am a nomad of the dwarves, I must respect Tres's whish to battle it is the Dwarf thing to do!")
         elif isinstance(Myclass, adventureclass.Elf):
