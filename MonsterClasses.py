@@ -20,10 +20,18 @@ class Giant():
         self.attack = 10
         self.speed = 1
 
+class Trolls():
+    def __init__(self):
+        self.name = "Bridge Trolls"
+        self.health = 16
+        self.attack = 7
+        self.speed = 3
+
 
 m1 = Goblin()
 
 m2 = Orc()
 
 m3 = Giant()
-        
+
+m4 = Trolls()

@@ -1,28 +1,28 @@
 class Dragon():
     def __init__(self):
         self.name = "Dragon"
-        self.health = 35
+        self.health = 45
         self.attack = 14
         self.speed = 5
 
 class CurroptedKing():
     def __init__(self):
         self.name = "The Curropted King"
-        self.health = 19
+        self.health = 22
         self.attack = 11
         self.speed = 3
 
 class ElfKing():
     def __init__ (self):
         self.name = "Elf King Algiar"
-        self.health = 17
+        self.health = 25
         self.attack = 12
         self.speed = 6
 
 class ElfGeneral():
     def __init__(self):
         self.name = "Elf General Sven"
-        self.health = 15
+        self.health = 20
         self.attack = 10
         self.speed = 6
 

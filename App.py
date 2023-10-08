@@ -361,3 +361,62 @@ input("JOJO: Oh well, there goes our time limit for that!")
 input("UNO: CMON YA HEAFTY LADS, LETS GET A MOVE ON.")
 input(playername + ": COMINGGG!")
 input("JOJO: Our next stop should be right over this bridge, ONWARDS!")
+
+
+
+Troll = MonsterClasses.Trolls()
+
+LostDwarves = adventureclass.BandofDwarves()
+
+print("_______________________________________________________________________________________________________\n")
+input("                            You have now gained the strength of the Lost Dwarves!")
+print("             in Battle Your attack stats will now combine with the attack stats of the dwarves to deal even more power")
+input("        You also now have a SUPER POWER; if your dice lands on the numbers 1 or 7 you do 70 percent of your enemies health as damage")
+print("                            use your powerful new allies to deal with these Bridge Trolls!")
+input("_______________________________________________________________________________________________________\n")
+
+Roll = random.randint(1,10)
+
+input(" Press Enter to Roll Dice ")
+
+print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+while Myclass.health > 0 and Troll.health > 0:
+    if Roll <= Myclass.speed:
+        damage = Myclass.attack + LostDwarves.attack
+        print(playername + " and party Attacks!")
+        Troll.health -= damage
+        print("Bridge Trolls health:", Troll.health)
+        if Troll.health <= 0:
+            print("You have slain the enemy")
+        elif Troll.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+
+    elif Roll in [1,7]:
+        damage = 0.7 * Troll.health
+        print(playername + " and party uses RADIANT SPARK")
+        Troll.health -= damage
+        print("Bridge Trolls health:", Troll.health)
+        if Troll.health <= 0:
+            print("You have slain the enemy")
+        elif Troll.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+        
+    else:
+        damage = Troll.attack
+        print("The Trolls Attacks!")
+        Myclass.health -= damage
+        print(playername + " health:", Myclass.health)
+        if Myclass.health <= 0:
+            Myclass.health = 0
+            print("GAME OVER")
+        elif Myclass.health > 0:
+            Roll = random.randint(1,10)
+            input(" Press Enter to Roll Dice ")
+            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    
+
