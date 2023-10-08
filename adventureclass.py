@@ -43,7 +43,13 @@ class ElfGeneralSven():
         self.health = 16
         self.attack = 5
         self.speed = 5
-
+class Tres():
+    def __init__(self):
+        self.name = "Tres"
+        self.health = 12
+        self.attack = 15
+        self.speed = 3
+        
 c1 = Human()
 
 c2 = Hobbit()

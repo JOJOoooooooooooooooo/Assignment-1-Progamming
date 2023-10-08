@@ -26,6 +26,12 @@ class ElfGeneral():
         self.attack = 10
         self.speed = 6
 
+class ElfGeneralMad():
+    def __init__(self):
+        self.name = "Elf General Sven"
+        self.health = 22
+        self.attack = 10
+        self.sepeed = 6
 
 
 
