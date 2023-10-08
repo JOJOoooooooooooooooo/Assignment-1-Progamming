@@ -422,6 +422,7 @@ print("_________________________________________________________________________
 Troll = MonsterClasses.Trolls()
 
 LostDwarves = adventureclass.BandofDwarves()
+
 Choice2 = 0
 
 while Choice2 == 0:
@@ -718,7 +719,7 @@ print("                                              2 HOURS LATER\n")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
 
 input("ELF KING ALGIAR: I SEE! so you need the aid of the elves to take back your long forgotten home!")
-input("ELF KING ALGIAR: How Genuienly splendid")
+input("ELF KING ALGIAR: and of course I would assume the Elves would be generously conpencated for this deed, How Genuienly splendid")
 input("TRES: splendid?...SPLENDID?")
 print(playername + ": !!!")
 print("UNO: !!!")
@@ -727,10 +728,70 @@ input("JOJO: TRES WAIT NOW IS NOT THE TIME!")
 input("TRES: SCREW THE TIME I NEVER KNEW HOW TO READ A CLOCK ANYWAY")
 input(playername + ": huh?")
 input("TRES: WHAT I DO KNOW, AND HAVE ALWAYS KNOWN SINCE I WAS A WEE LAD, IS THAT YOU ELVES ARE THE REASON WE LOST IT ALL, NOW LOOK AT YOU SITTING HIGH AND MIGHTY ON YOUR THRONE, WHILE WE THE... WE...")
-input("TRES: WE THE DWARVES! RUN FOR OUR HOME SEEKING THE AID OF THOSE NOT OF OUR BLOOD LIKE BEGGARS")
+input("TRES: WE THE DWARVES! RUN FOR OUR HOME SEEKING THE AID OF THOSE NOT OF OUR BLOOD LIKE BEGGARS AND NOW YOU TRY TO STEEL WHATS LEFT OF OUR WEALTH AS WELL!! HOW DARE YOU")
 input("ELF KING ALGIAR: Is that how you truly feel?")
 input("TRES: I'VE HAD ENOUGH OF THIS, I CANT STAND THESE ELVES")
-input("TRES: " + playername +)
+input("TRES: " + playername + "YOU SAID YOU UNDERSTOOD MY PAIN, IF YOU REALLY DO THEN YOU'LL HELP ME DETHRONE THIS FALSE KING AND TAKE THEIR WEAPONS FOR OUR OWN, WE CAN DO THIS WITHOUT THESE DAMN ELVES")
+input(playername + ": Tres...")
+print("_______________________________________________________________________________________________________\n")
+print("                            (1) - Stop Tres")
+print("                            (2) - Fight the King.")
+print("_______________________________________________________________________________________________________\n")
+
+King = BossClasses.ElfKing()
+
+Choice3 = 0
+
+while Choice3 == 0:
+    userchoice3 = input("Enter a number for the corresponding options: ")
+
+    if userchoice3 == "1":
+        Choice3 = Choice3 + 1
+        print(playername + ": Im sorry Tres... I can't do this, it isnt right")
+        input("TRES: I KNEW I SHOULDNT HAVE TRUSTED YOU...")
+        input("UNO: STOP IT TRES, YER GOING TO FAR")
+        input("DOS: THINK TRES IF WE JUST SIDE WITH THE ELF KING NOW WE CAN GET OUR HOME BACK!")
+        input("TRES: IF YOU ALL WILL COWARD FROM THIS, THEN LEAVE IT TO ME TO CLEAN THIS MESS UP ONCE AND FOR-")
+        print("_______________________________________________________________________________________________________\n")
+        print("                                 Tres has been put to sleep")
+        input("_______________________________________________________________________________________________________\n")
+        print("JOJO: That took a lot out of me...")
+        input("UNO: WHAT DID YOU DO?")
+        input("DOS: IS HE GONNA BE OKAY?")
+        input("JOJO: He's fine-")
+        input(playername + ": He's just asleep, looks like hes out cold too")
+        input("JOJO: I apologize for Tres your higness-")
+        input("ELF KING ALGIAR: I worry not of such *little* matters, this matter has changed from a poltical one, to a personal once, as I would very much like to see what will happen to your company once you set foot in the Kingdom")
+        input("ELF KING ALGIAR: Especially since that Monsterous Stunna still resides there... My soldiers and I actually tried many times to take back your land Dwarves, sadly our efforts where in vein")
+        input("ELF KING ALGIAR: You bunch seem different than the rest, no one has made it this far before, especially beating my Elf General Sven, of which will be joining you in battle")
+        input("but your weapons and armour as it stands is abysmal, GUARDS! bring me better armor and weapons for these fine warriors")
+        input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| ARMOUR AND WEAPONS AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+        print("_______________________________________________________________________________________________________\n")
+        print("                   Your Attack Stat Has Increased by 3 and Your health stat Has increased by 6")
+        input("_______________________________________________________________________________________________________\n")
+        Myclass.attack = Myclass.attack + 3
+        Myclass.health = Myclass.health + 6
+        input("JOJO: Thank you Lord Algiar, with this we can surely take back the Dwarves home")
+        input("UNO: CARRY TRES DOS")
+        input(playername + ": It's okay I got it")
+        print("_______________________________________________________________________________________________________\n")
+        print("                   Elf General Sven Has Joined your party and increased you overall damage by 5")
+        input("_______________________________________________________________________________________________________\n")
+        print("_______________________________________________________________________________________________________\n")
+        print("            With the help of the Elv's, The hero's make their way to the Lost Kingdom of The Dwarves")
+        input("_______________________________________________________________________________________________________\n")
+        input("JOJO: THERE IT IS... THE LOST CITY OF THE ELVES")
+        input("ELF GENERAL: ")
+        
+
+
+
+
+
+            
+        
+
+
 
 
 

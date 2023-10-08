@@ -37,7 +37,12 @@ class BandofDwarves():
         self.health = 17
         self.attack = 6
         self.speed = 5
-
+class ElfGeneralSven():
+    def __init__(self):
+        self.name = "Elf General Sven"
+        self.health = 16
+        self.attack = 5
+        self.speed = 5
 
 c1 = Human()
 
