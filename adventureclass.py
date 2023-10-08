@@ -1,7 +1,7 @@
 #Max health stat = 15
 #Max Attack stat = 10
 #max speed stat = 10
-
+#Classes for Adventurers
 
 class Human():
     def __init__(self):
@@ -49,7 +49,7 @@ class Tres():
         self.health = 12
         self.attack = 15
         self.speed = 3
-        
+
 c1 = Human()
 
 c2 = Hobbit()
