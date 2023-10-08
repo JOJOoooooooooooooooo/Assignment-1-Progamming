@@ -427,7 +427,8 @@ while Choice2 == 0:
 
     if userchoice2 == "1":
         Choice2 = Choice2 + 1
-        print("UNO: NO WAY WE'RE LETTING THESE MONSTERS STOP US, DOS! TRES! LETS HELP " + playername +"FIGHT THESE BASTARDS")
+        print("I Chose to FIGHT!")
+        input("UNO: THAT'S WHAT IM TALKING ABOUT, NO WAY WE'RE LETTING THESE MONSTERS STOP US, DOS! TRES! LETS HELP " + playername +"FIGHT THESE BASTARDS")
         Roll = random.randint(1,10)
         input(" Press Enter to Roll Dice ")
         print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
@@ -471,7 +472,10 @@ while Choice2 == 0:
                     input(" Press Enter to Roll Dice ")
                     input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
     elif userchoice2 == "2":
-        
+        Choice2 = Choice2 + 1
+        print("")
+
+
  
 
 
