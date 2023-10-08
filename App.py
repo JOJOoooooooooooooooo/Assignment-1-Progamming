@@ -266,7 +266,11 @@ input(playername + ": Like how did you know I was meant to acompny you, or how t
 input("JOJO: My friend, you must rest. You are fresh from battle. Be at ease, as I promised it will all make sense.")
 input("JOJO: You just rest in bed for a little longer, and here take this. It should prove to be usefull in the future.")
 input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| NECKLACE AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
-input(playername + ": Okay, I trust you, I'm gonna get some shut eye...")
+print("_______________________________________________________________________________________________________\n")
+input("                             Your health stat has now doubled since battle!")
+print("_______________________________________________________________________________________________________\n")
+Myclass.health = Myclass.health * 2
+input(playername + ": Phew I feel a lot better, Okay, I trust you, I'm gonna get some shut eye...")
 
 #Intorucing the dwarfs
 print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
@@ -362,61 +366,118 @@ input("UNO: CMON YA HEAFTY LADS, LETS GET A MOVE ON.")
 input(playername + ": COMINGGG!")
 input("JOJO: Our next stop should be right over this bridge, ONWARDS!")
 
+#INTRODUCING THE TROLLS
 
+print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("- - - - - - - - - - - - - - - - - - - - THE BAND APPROACHES THE BRIDGE - - - - - - - - - - - - - - - - -\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n")
+input("")
+print("_______________________________________________________________________________________________________\n")
+print("                                 You feel a tremble in the earth")
+print("_______________________________________________________________________________________________________\n")
+input("\nUNKOWN: FII FII FOO FUMMMM")
+input("UNO: OI WHATS GOIN ON HER")
+input("UNKOWN: WHOOOO DAAARES COMEE NEEEAARRR!!!")
+input("JOJO: Everyone be ready for anything!\n\n\n")
 
-Troll = MonsterClasses.Trolls()
-
-LostDwarves = adventureclass.BandofDwarves()
-
+print("           _......._")
+print("       .-'.'.'.'.'.'.`-.")
+print("     .'.'.'.'.'.'.'.'.'.`.")
+print("    /.'.'               '.\ ")
+print("    |.'    _.--...--._     |")
+print("    \    `._.-.....-._.'   /")
+print("    |     _..- .-. -.._   |")
+print(" .-.'    `.   ((@))  .'   '.-.")
+print("( ^ \      `--.   .-'     / ^ )")
+print(" \  /         .   .       \  /")
+print(" /          .'     '.  .-    \ ")
+print("( _.\    \ (_`-._.-'_)    /._\)")
+print(" `-' \   ' .--.          / `-'")
+print("     |  / /|_| `-._.'\   |")
+print("     |   |       |_| |   /-.._")
+print(" _..-\   `.--.______.'  |")
+print("      \       .....     |")
+print("       `.  .'      `.  /")
+print("         \           .'")
+print("          `-..___..-`")
+print("\n\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+print("                                {-{-{-|     TROLL ENCOUNTER   |-}-}-}\n")
+input("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<| --------------------- |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n\n")
+input("Trolls: IF YOU WISHH TO PASS THIS BRIDGE EITHER FIGHT US WHERE WE STAND OR PASS OUR CHALLENGES!")
 print("_______________________________________________________________________________________________________\n")
 input("                            You have now gained the strength of the Lost Dwarves!")
 print("             in Battle Your attack stats will now combine with the attack stats of the dwarves to deal even more power")
 input("        You also now have a SUPER POWER; if your dice lands on the numbers 1 or 7 you do 70 percent of your enemies health as damage")
 print("                            use your powerful new allies to deal with these Bridge Trolls!")
 input("_______________________________________________________________________________________________________\n")
+input("JOJO: If we do plan on fighting I will not be able to join...as of now my magic is to weak to help...")
+input("JOJO: What say you " + playername + "do you wish to fight these Trolls or hear their challenges, the choice is yours my friend")
+print("_______________________________________________________________________________________________________\n")
+print("                            (1) - Fight The Trolls!")
+print("                            (2) - Attempt their Challenges.")
+print("_______________________________________________________________________________________________________\n")
 
-Roll = random.randint(1,10)
+Troll = MonsterClasses.Trolls()
 
-input(" Press Enter to Roll Dice ")
+LostDwarves = adventureclass.BandofDwarves()
+Choice2 = 0
 
-print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+while Choice2 == 0:
+    userchoice2 = input("Enter a number for the corresponding options: ")
 
-while Myclass.health > 0 and Troll.health > 0:
-    if Roll <= Myclass.speed:
-        damage = Myclass.attack + LostDwarves.attack
-        print(playername + " and party Attacks!")
-        Troll.health -= damage
-        print("Bridge Trolls health:", Troll.health)
-        if Troll.health <= 0:
-            print("You have slain the enemy")
-        elif Troll.health > 0:
-            Roll = random.randint(1,10)
-            input(" Press Enter to Roll Dice ")
-            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    if userchoice2 == "1":
+        Choice2 = Choice2 + 1
+        print("UNO: NO WAY WE'RE LETTING THESE MONSTERS STOP US, DOS! TRES! LETS HELP " + playername +"FIGHT THESE BASTARDS")
+        Roll = random.randint(1,10)
+        input(" Press Enter to Roll Dice ")
+        print("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
 
-    elif Roll in [1,7]:
-        damage = 0.7 * Troll.health
-        print(playername + " and party uses RADIANT SPARK")
-        Troll.health -= damage
-        print("Bridge Trolls health:", Troll.health)
-        if Troll.health <= 0:
-            print("You have slain the enemy")
-        elif Troll.health > 0:
-            Roll = random.randint(1,10)
-            input(" Press Enter to Roll Dice ")
-            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+        while Myclass.health > 0 and Troll.health > 0:
+            if Roll in [1,7]:
+                damage = 0.7 * Troll.health
+                formatted_damage = "{:.2f}".format(damage)
+                print(playername + " and party uses RADIANT SPARK")
+                Troll.health -= damage
+                print("Bridge Trolls health:", Troll.health)
+
+                if Troll.health <= 0:
+                    print("You have slain the enemy")
+                elif Troll.health > 0:
+                    Roll = random.randint(1,10)
+                    input(" Press Enter to Roll Dice ")
+                    input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+            elif Roll <= Myclass.speed:
+                damage = Myclass.attack + LostDwarves.attack
+                print(playername + " and party Attacks!")
+                Troll.health -= damage
+                print("Bridge Trolls health:", Troll.health)
+                if Troll.health <= 0:
+                    print("You have slain the enemy")
+                elif Troll.health > 0:
+                    Roll = random.randint(1,10)
+                    input(" Press Enter to Roll Dice ")
+                    input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+            else:
+                damage = Troll.attack
+                print("The Trolls Attacks!")
+                Myclass.health -= damage
+                print(playername + " health:", Myclass.health)
+
+                if Myclass.health <= 0:
+                    Myclass.health = 0
+                    print("GAME OVER")
+                elif Myclass.health > 0:
+                    Roll = random.randint(1,10)
+                    input(" Press Enter to Roll Dice ")
+                    input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+    elif userchoice2 == "2":
         
-    else:
-        damage = Troll.attack
-        print("The Trolls Attacks!")
-        Myclass.health -= damage
-        print(playername + " health:", Myclass.health)
-        if Myclass.health <= 0:
-            Myclass.health = 0
-            print("GAME OVER")
-        elif Myclass.health > 0:
-            Roll = random.randint(1,10)
-            input(" Press Enter to Roll Dice ")
-            input("The Dice lands on... " + color.BOLD + str(Roll) + color.END)
+ 
+
+
+
+
+
+
     
 
