@@ -556,6 +556,9 @@ while Choice2 == 0:
         input("TROLLS: PAPER!!!\n")
         input("TROLLS: SICSSORS!!!\n")
         input("TROLLS: AND SHOOT!!!\n")
+       
+        
+
 
 #Rock paper scissor
         s = 0
@@ -569,20 +572,97 @@ while Choice2 == 0:
             if choice3 == "Rock" and trollschoice == "Scissors":
                 s = s + 1
                 print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             The Trolls Give you an item: ")
+                print("_______________________________________________________________________________________________________\n")
+                input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| GOOD-LUCK CHARM OF THE TROLLS AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             Your speed stat has increased by 1 ")
+                print("_______________________________________________________________________________________________________\n")
+                Myclass.speed = Myclass.speed + 1
+
 
             elif choice3 =="Rock" and trollschoice == "Paper":
                     print("GAME OVER")
+                    print("                                              ,--.")
+                    print("                                             {    }")
+                    print("                                             K,   }")
+                    print("                                            /  `Y`")
+                    print("                                       _   /   / ")
+                    print("                                      {_'-K.__/")
+                    print("                                        `/-.__L._")
+                    print("                                        /  ' /`\_}")
+                    print("                                       /  ' /  ")
+                    print("                               ____   /  ' / ")
+                    print("                        ,-'~~~~    ~~/  ' /_")
+                    print("                      ,'             ``~~~  ',")
+                    print("                     (                     %  Y")
+                    print("                    {                       % I")
+                    print("                   {      -                 %  `.")
+                    print("                   |       ',                %  )")  
+                    print("                   |        |   ,..__      __. Y")
+                    print("                   |    .,_./  Y ' / ^Y   J   )|")
+                    print("                   \           |' /   |   |   ||")
+                    print("                    \          L_/    . _ (_,.'(")
+                    print("                     \,   ,      ^^""' / |      )")
+                    print("                       \_  \          /,L]     /")
+                    print("                         '-_`-,       ` `   ./`")
+                    print("                            `-(_            )")
+                    print("                                ^^\..___,.--`")
+                    sys.exit()
                 
             elif choice3 == "Paper" and trollschoice == "Rock":
                 s = s + 1
                 print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             The Trolls Give you an item: ")
+                print("_______________________________________________________________________________________________________\n")
+                input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| GOOD-LUCK CHARM OF THE TROLLS AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             Your speed stat has increased by 1 ")
+                print("_______________________________________________________________________________________________________\n")
+                Myclass.speed = Myclass.speed + 1
 
             elif choice3 == "Paper" and trollschoice == "Scissors":
                     print("GAME OVER")
+                    print("                                              ,--.")
+                    print("                                             {    }")
+                    print("                                             K,   }")
+                    print("                                            /  `Y`")
+                    print("                                       _   /   / ")
+                    print("                                      {_'-K.__/")
+                    print("                                        `/-.__L._")
+                    print("                                        /  ' /`\_}")
+                    print("                                       /  ' /  ")
+                    print("                               ____   /  ' / ")
+                    print("                        ,-'~~~~    ~~/  ' /_")
+                    print("                      ,'             ``~~~  ',")
+                    print("                     (                     %  Y")
+                    print("                    {                       % I")
+                    print("                   {      -                 %  `.")
+                    print("                   |       ',                %  )")  
+                    print("                   |        |   ,..__      __. Y")
+                    print("                   |    .,_./  Y ' / ^Y   J   )|")
+                    print("                   \           |' /   |   |   ||")
+                    print("                    \          L_/    . _ (_,.'(")
+                    print("                     \,   ,      ^^""' / |      )")
+                    print("                       \_  \          /,L]     /")
+                    print("                         '-_`-,       ` `   ./`")
+                    print("                            `-(_            )")
+                    print("                                ^^\..___,.--`")
+                    sys.exit()
 
             elif choice3 == "Scissors" and trollschoice == "Paper":
                 s = s + 1
                 print("TROLLS: NOOOOO, WE'VE BEEN DEFEATED!!!")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             The Trolls Give you an item: ")
+                print("_______________________________________________________________________________________________________\n")
+                input("\n\n<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-| GOOD-LUCK CHARM OF THE TROLLS AQUIRED |-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>\n\n")
+                print("_______________________________________________________________________________________________________\n")
+                input("                             Your speed stat has increased by 1 ")
+                print("_______________________________________________________________________________________________________\n")
+                Myclass.speed = Myclass.speed + 1
 
             elif choice3 == "Scissors" and trollschoice == "Rock":
                     print("GAME OVER")
