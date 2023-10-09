@@ -1268,7 +1268,7 @@ while Choice3 == 0:
                     DragonStunna.health -= damage
                     print("DRAGON STUNNA'S Health:", DragonStunna.health)
                     if DragonStunna.health <= 0:
-                        print("You have defeated the Elf General!")
+                        print("You have Defeated The calamitous DRAGON STUNNA!!!!")
                     elif DragonStunna.health > 0:
                         Roll = random.randint(1,10)
                         input(" Press Enter to Roll Dice ")
@@ -1483,7 +1483,7 @@ while Choice3 == 0:
                     DragonStunna.health -= damage
                     print("DRAGON STUNNA'S Health:", DragonStunna.health)
                     if DragonStunna.health <= 0:
-                        print("You have defeated the Elf General!")
+                        print("You have Defeated The calamitous DRAGON STUNNA!!!")
                     elif DragonStunna.health > 0:
                         Roll = random.randint(1,10)
                         input(" Press Enter to Roll Dice ")
@@ -1686,7 +1686,7 @@ while Choice3 == 0:
                     DragonStunna.health -= damage
                     print("DRAGON STUNNA'S Health:", DragonStunna.health)
                     if DragonStunna.health <= 0:
-                        print("You have defeated the Elf General!")
+                        print("You have Defeated The calamitous DRAGON STUNNA!!!")
                     elif DragonStunna.health > 0:
                         Roll = random.randint(1,10)
                         input(" Press Enter to Roll Dice ")
@@ -1891,7 +1891,7 @@ while Choice3 == 0:
                     DragonStunna.health -= damage
                     print("DRAGON STUNNA'S Health:", DragonStunna.health)
                     if DragonStunna.health <= 0:
-                        print("You have defeated the Elf General!")
+                        print("You have Defeated The calamitous DRAGON STUNNA!!!!")
                     elif DragonStunna.health > 0:
                         Roll = random.randint(1,10)
                         input(" Press Enter to Roll Dice ")
