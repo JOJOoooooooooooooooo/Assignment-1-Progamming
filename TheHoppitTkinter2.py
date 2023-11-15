@@ -11,6 +11,9 @@ import adventureclass
 win = tk.Tk()
 win.title('The Hoppit')
 
+#Creating Icon
+win.iconbitmap('TheHoppitIcon.ico')
+win.resizable(0, 0) #This makes it so that it stays at a specific window size (you cant fulltscren it)
 
 
 #creating image
@@ -63,23 +66,23 @@ gif_lb.pack(fill=tk.BOTH)
 
 threading.Thread(target=ready_gif).start()
 
-#Text for the window
+#Title for the window
 TextTitle = tk.Label(text= 'WELCOME TO THE HOPPIT ')
 TextTitle.place(x= 300 , y= 35)
 
 
-#retrieving text
+#retrieving title
 tt = TextTitle.cget("text")
 
 print(tt)
 
-#creating radio button options
 
+#Created Choose class
 TextChose = tk.Label(text='CHOOSE A CLASS')
 TextChose.place(x= 530, y= 175) 
 
 
-
+#creating radio button options
 def rb():
     if option.get() == 1:
         result = "Hobbit"
@@ -90,6 +93,7 @@ def rb():
     elif option.get() == 4:
         result = "Dwarf"
     label.config(text=f'You have selected:  {result}')
+
 
 option = tk.IntVar()
 rb1 = tk.Radiobutton(win, text = "Hobbit" , variable=option , value = 1,command=rb)
