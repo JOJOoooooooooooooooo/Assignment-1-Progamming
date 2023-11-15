@@ -107,7 +107,7 @@ rb3.pack()
 rb4 = tk.Radiobutton(win, text = "Dwarf  " , variable=option , value = 4,command=rb)
 rb4.pack()
 
-label = tk.Label(text="placeholder")
+label = tk.Label(text="Your Class:")
 label.pack()
 
 #creating background music
@@ -120,6 +120,7 @@ pygame.mixer.music.play(-1) #-1 so that every time the song ends it will play it
 
 #creating SStart and Quit Buttons
 button_start= tk.Button(win, text= "Start Game", command=win.quit)
+button_start.pack()
 button_quit = tk.Button(win, text= "Quit Game", command= win.quit)
 button_quit.pack()
 
