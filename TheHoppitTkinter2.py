@@ -64,20 +64,20 @@ gif_lb.pack(fill=tk.BOTH)
 threading.Thread(target=ready_gif).start()
 
 #Text for the window
-TextTitle = tk.Text(win, height=1, width=30 )
-TextTitle.place(x= 260 , y= 35)
-TextTitle.insert(tk.END, '     WELCOME TO THE HOPPIT ')
+TextTitle = tk.Label(text= 'WELCOME TO THE HOPPIT ')
+TextTitle.place(x= 300 , y= 35)
+
 
 #retrieving text
-tt = TextTitle.get('1.0' , 'end')
+tt = TextTitle.cget("text")
 
 print(tt)
 
 #creating radio button options
 
-TextChose = tk.Text(win, height=1, width=20 )
+TextChose = tk.Label(text='CHOOSE A CLASS')
 TextChose.place(x= 530, y= 175) 
-TextChose.insert(tk.END, '  CHOOSE A CLASS')
+
 
 
 def rb():
