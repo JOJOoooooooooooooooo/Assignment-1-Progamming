@@ -9,19 +9,9 @@ import adventureclass
 
 #creating the window
 win = tk.Tk()
-win.geometry = ("600x393")
 win.title('The Hoppit')
 
 
-#Text for the window
-TextTitle = tk.Text(win, height=1, width=30 )
-TextTitle.pack() 
-TextTitle.insert(tk.END, '     WELCOME TO THE HOPPIT ')
-
-#retrieving text
-tt = TextTitle.get('1.0' , 'end')
-
-print(tt)
 
 #creating image
 #my_img = ImageTk.PhotoImage(Image.open("TheHoppit2.jpg"))
@@ -73,13 +63,20 @@ gif_lb.pack(fill=tk.BOTH)
 
 threading.Thread(target=ready_gif).start()
 
+#Text for the window
+TextTitle = tk.Text(win, height=1, width=30 )
+TextTitle.place(x= 260 , y= 35)
+TextTitle.insert(tk.END, '     WELCOME TO THE HOPPIT ')
 
+#retrieving text
+tt = TextTitle.get('1.0' , 'end')
 
+print(tt)
 
 #creating radio button options
 
 TextChose = tk.Text(win, height=1, width=20 )
-TextChose.pack() 
+TextChose.place(x= 530, y= 175) 
 TextChose.insert(tk.END, '  CHOOSE A CLASS')
 
 
@@ -96,33 +93,33 @@ def rb():
 
 option = tk.IntVar()
 rb1 = tk.Radiobutton(win, text = "Hobbit" , variable=option , value = 1,command=rb)
-rb1.pack()
+rb1.place(x=530,y=205)
    
 rb2 = tk.Radiobutton(win, text = "Human" , variable=option , value = 2,command=rb)
-rb2.pack()
+rb2.place(x=530, y=245)
 
 rb3 = tk.Radiobutton(win, text = "Elf        " , variable=option , value = 3,command=rb)
-rb3.pack()
+rb3.place(x=530, y = 285)
 
 rb4 = tk.Radiobutton(win, text = "Dwarf  " , variable=option , value = 4,command=rb)
-rb4.pack()
+rb4.place(x= 530, y = 325)
 
 label = tk.Label(text="Your Class:")
-label.pack()
+label.place(x= 530, y = 365)
 
 #creating background music
 pygame.mixer.init() # the order for inside the brackets would go ( 44100, -16, 2, 2048) Frequency, size, channels, buffer
 
 pygame.mixer.music.load("The Company of Heroes.wav") 
-pygame.mixer.music.set_volume(0.5)
+pygame.mixer.music.set_volume(0.2)
 pygame.mixer.music.play(-1) #-1 so that every time the song ends it will play it again
 
 
 #creating SStart and Quit Buttons
 button_start= tk.Button(win, text= "Start Game", command=win.quit)
-button_start.pack()
+button_start.place(x= 352, y = 353)
 button_quit = tk.Button(win, text= "Quit Game", command= win.quit)
-button_quit.pack()
+button_quit.place(x = 10, y= 353)
 
 
 
