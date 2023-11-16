@@ -81,17 +81,25 @@ print(tt)
 TextChose = tk.Label(text='CHOOSE A CLASS')
 TextChose.place(x= 530, y= 175) 
 
-
 #creating radio button options
 def rb():
     if option.get() == 1:
         result = "Hobbit"
+        player_class = adventureclass.Hobbit()
+       
     elif option.get() == 2:
         result = "Human"
+        player_class = adventureclass.Human()
+        
     elif option.get() == 3:
         result = "Elf"
+        player_class = adventureclass.Elf()
+        
     elif option.get() == 4:
         result = "Dwarf"
+        player_class = adventureclass.Dwarf()
+
+    print("Class:", result)
     label.config(text=f'You have selected:  {result}')
 
 
