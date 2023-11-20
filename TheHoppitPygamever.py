@@ -110,7 +110,7 @@ while run:
     #Character movement key presses
     if key[pygame.K_LEFT] and player.x > 0:
         player.x -= PLAYER_VELOCITY
-    if key[pygame.K_RIGHT] and player.x < WIDTH - PLAYER_WIDTH:
+    if key[pygame.K_RIGHT] and player.x < WIDTH - PLAYER_WIDTH: #Player movement does not currently work
         player.x += PLAYER_VELOCITY
     pygame.display.update()
 
