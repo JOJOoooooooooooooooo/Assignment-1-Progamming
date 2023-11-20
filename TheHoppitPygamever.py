@@ -23,7 +23,8 @@ bg_images = []
 for i in range(1, 3):
     bg_image1 = pygame.image.load(f"clouds-1.png").convert_alpha()
     bg_image2 = pygame.image.load(f"town-2.png").convert_alpha()
-    bg_images.extend([bg_image1, bg_image2])
+    bg_image3 = pygame.image.load(f"tiles-broken-house.png").convert_alpha() #how to change x and y of one image of parallax list?
+    bg_images.extend([bg_image1, bg_image2, bg_image3])
 bg_width = bg_images[0].get_width()
 
 #The images are now loaded but we need to draw them
