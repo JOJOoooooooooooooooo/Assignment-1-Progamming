@@ -2,8 +2,8 @@ import tkinter as tk
 from PIL import ImageTk, Image
 import pygame
 import threading
-from tkinter import Canvas
 import adventureclass
+
 
 
 
@@ -82,11 +82,13 @@ TextChose = tk.Label(text='CHOOSE A CLASS')
 TextChose.place(x= 530, y= 175) 
 
 #creating radio button options
+
 def rb():
+    result="Hobbit Default"
     if option.get() == 1:
         result = "Hobbit"
         player_class = adventureclass.Hobbit()
-       
+        
     elif option.get() == 2:
         result = "Human"
         player_class = adventureclass.Human()
@@ -98,9 +100,14 @@ def rb():
     elif option.get() == 4:
         result = "Dwarf"
         player_class = adventureclass.Dwarf()
-
+    
     print("Class:", result)
     label.config(text=f'You have selected:  {result}')
+  
+
+#Defining Images for our buttons
+#add_class_image = tk.PhotoImage(Image.open("Hoppit assets-not for commercial use/class button.png").resize((20,20)))  THIS DID NOT WORK 
+#add_play_image = tk.PhotoImage(Image.open("Hoppit assets-not for commercial use/play button.png").resize((20,20)))
 
 
 option = tk.IntVar()
@@ -119,11 +126,13 @@ rb4.place(x= 530, y = 325)
 label = tk.Label(text="Your Class:")
 label.place(x= 530, y = 365)
 
+
+
 #creating background music
 pygame.mixer.init() # the order for inside the brackets would go ( 44100, -16, 2, 2048) Frequency, size, channels, buffer
 
 pygame.mixer.music.load("The Company of Heroes.wav") 
-pygame.mixer.music.set_volume(0.2)
+pygame.mixer.music.set_volume(0.1)
 pygame.mixer.music.play(-1) #-1 so that every time the song ends it will play it again
 
 
@@ -138,3 +147,5 @@ button_quit.place(x = 10, y= 353)
 
 win.mainloop()
 
+
+#MIGHT NEED TO TAKE OUT RADIO BUTTONS AND INSTEAD LEAVE MAIN MENU AS JUST A START GAME QUIT GAME SCREEN, THE NEXT SCREEN WILL BE A CHOOSE YOUR CLASS SCREEN WHERE YOU CAN CLIICK A REUGLAR BUTTON TO CHOOSE UR CLASS, IT WILL SHOW STATS AND STUFF
