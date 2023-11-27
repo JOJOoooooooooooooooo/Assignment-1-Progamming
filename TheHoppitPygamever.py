@@ -144,12 +144,16 @@ while run:
     elif key[pygame.K_c]:  # Crouching Added
         action = 3
         animation_cooldown = 400 #Since crouch only has 2 frames, i lower the animation cooldown so it doesnt go too fast
-        
+    
+    elif key[pygame.K_j]:
+        action = 1
+        animation_cooldown = 150
+
     else:
         action = 5
         animation_cooldown = 96 #because I changed the animation cooldown I have to make sure I change it back after key is pressed
     
-        
+    
     
     #Jump Button
     if jump is False and key[pygame.K_SPACE]:
