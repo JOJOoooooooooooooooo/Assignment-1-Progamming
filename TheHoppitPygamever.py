@@ -143,7 +143,7 @@ while run:
     
     elif key[pygame.K_c]:  # Crouching Added
         action = 3
-        animation_cooldown = 250 #Since crouch only has 2 frames, i lower the animation cooldown so it doesnt go too fast
+        animation_cooldown = 400 #Since crouch only has 2 frames, i lower the animation cooldown so it doesnt go too fast
         
     else:
         action = 5
