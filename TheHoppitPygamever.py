@@ -121,19 +121,24 @@ while run:
     
     #get key presses and speed of scrolling and limitations of scroll
     key = pygame.key.get_pressed()
-    if key[pygame.K_a] and scroll > 0:
+    
+    if key[pygame.K_a] and key[pygame.K_d]:
+        player.x = player.x
+        action = 0
+
+    elif key[pygame.K_a] and scroll > 0:
         player.x -= PLAYER_VELOCITY_X
         scroll -= PLAYER_VELOCITY_X
         action = 2
-    
-    
-    
-    
-    if key[pygame.K_d] and scroll < 1900 and WIDTH - PLAYER_WIDTH:
+        
+   
+    elif key[pygame.K_d] and scroll < 1900 and WIDTH - PLAYER_WIDTH:
         player.x += PLAYER_VELOCITY_X
         scroll += PLAYER_VELOCITY_X
         action = 2
         #This makes it so that everytime we press or hold this key the frame will start at 0 and use the update animation code to hold it so that it never goes above its frame list 
+        
+   
         
     else:
         action = 0
