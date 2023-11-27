@@ -52,7 +52,7 @@ animation_list = []
 animation_steps = [4, 4, 12]
 action = 0
 last_update = pygame.time.get_ticks() # taking the time from when we execute the code
-animation_cooldown = 100 # "100" is in miliseconds
+animation_cooldown = 96 # "100" is in miliseconds
 frame = 0
 step_counter = 0
 
@@ -112,8 +112,8 @@ while run:
     if current_time - last_update >= animation_cooldown:
         frame += 1
         last_update = current_time
-        if frame >= len(animation_list[action]):
-            frame = 0
+    if frame >= len(animation_list[action]):
+        frame = 0
         
 
     #show frame images
@@ -121,18 +121,19 @@ while run:
     
     #get key presses and speed of scrolling and limitations of scroll
     key = pygame.key.get_pressed()
-    if key[pygame.K_LEFT] and scroll > 0:
+    if key[pygame.K_a] and scroll > 0:
         player.x -= PLAYER_VELOCITY_X
         scroll -= PLAYER_VELOCITY_X
-        action = 1
-        
+        action = 2
     
-
-    if key[pygame.K_RIGHT] and scroll < 1900 and WIDTH - PLAYER_WIDTH:
+    
+    
+    
+    if key[pygame.K_d] and scroll < 1900 and WIDTH - PLAYER_WIDTH:
         player.x += PLAYER_VELOCITY_X
         scroll += PLAYER_VELOCITY_X
-        action =2
-        frame = -1 #This makes it so that everytime it goes above the frames that we have, it will restart problem is when holding button it looks goofy   
+        action = 2
+        #This makes it so that everytime we press or hold this key the frame will start at 0 and use the update animation code to hold it so that it never goes above its frame list 
         
     else:
         action = 0
@@ -147,12 +148,11 @@ while run:
         player.y -= PLAYER_VELOCITY_Y
         PLAYER_VELOCITY_Y -= 1
         action = 1
-        frame=0
+        
         if PLAYER_VELOCITY_Y < -15:  
             jump = False
             PLAYER_VELOCITY_Y = 15
-            
-
+    
     #if key[pygame.K_SPACE]:
       #  player.y -= 10
     #Character movement key presses
