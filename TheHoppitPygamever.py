@@ -44,12 +44,12 @@ def draw_bg():
 #if abs(scroll) > bg_width:  for endless scrolling
     #scroll= 0
 #Sprite Sheet for player
-sprite_sheet_image = pygame.image.load('spritesheet.png').convert_alpha()
+sprite_sheet_image = pygame.image.load('spritesheet-2.png').convert_alpha()
 sprite_sheet = sprite_sheet_module.SpriteSheet(sprite_sheet_image)
 
 #create animation list
 animation_list = []
-animation_steps = [4, 4, 12]
+animation_steps = [3, 2, 3, 2, 3, 4, 4, 12]
 action = 0
 last_update = pygame.time.get_ticks() # taking the time from when we execute the code
 animation_cooldown = 96 # "100" is in miliseconds
@@ -80,6 +80,8 @@ PLAYER_HEIGHT = 67
 PLAYER_VELOCITY_X = 2
 PLAYER_VELOCITY_Y = 15
 jump = False
+
+
 
 #creating and spawning player #IMPORTANT!!! KEEPING THIS CODE INSIDE THE GAME LOOP BREAKS PLAYER MOVEMENT, KEEP IT OUTSIDE
 player = pygame.Rect(5 - scroll, HEIGHT - PLAYER_HEIGHT, PLAYER_WIDTH, PLAYER_HEIGHT) #to get the player to spawn at the very edge on the left put x "200" to "0"
@@ -117,31 +119,35 @@ while run:
         
 
     #show frame images
-    screen.blit(animation_list[action][frame], (player.x-30, player.y -30)) #Draw the sprite animation at the players position
+    screen.blit(animation_list[action][frame], (player.x-45, player.y -30)) #Draw the sprite animation at the players position
     
     #get key presses and speed of scrolling and limitations of scroll
     key = pygame.key.get_pressed()
     
     if key[pygame.K_a] and key[pygame.K_d]:
         player.x = player.x
-        action = 0
+        action = 5
 
     elif key[pygame.K_a] and scroll > 0:
         player.x -= PLAYER_VELOCITY_X
         scroll -= PLAYER_VELOCITY_X
-        action = 2
+        action = 7
+        
         
    
     elif key[pygame.K_d] and scroll < 1900 and WIDTH - PLAYER_WIDTH:
         player.x += PLAYER_VELOCITY_X
         scroll += PLAYER_VELOCITY_X
-        action = 2
+        action = 7
         #This makes it so that everytime we press or hold this key the frame will start at 0 and use the update animation code to hold it so that it never goes above its frame list 
-        
-   
+    
+    elif key[pygame.K_c]:  # Crouching Added
+        action = 3
+        animation_cooldown = 250 #Since crouch only has 2 frames, i lower the animation cooldown so it doesnt go too fast
         
     else:
-        action = 0
+        action = 5
+        animation_cooldown = 96 #because I changed the animation cooldown I have to make sure I change it back after key is pressed
     
         
     
@@ -152,7 +158,7 @@ while run:
     if jump is True:
         player.y -= PLAYER_VELOCITY_Y
         PLAYER_VELOCITY_Y -= 1
-        action = 1
+        action = 6
         
         if PLAYER_VELOCITY_Y < -15:  
             jump = False
